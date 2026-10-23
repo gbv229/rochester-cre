@@ -9,7 +9,8 @@
  */
 
 const DEFAULTS = {
-  MODEL: "gemini-3.8-flash",
+  // Tried in order. If one is overloaded or rate-limited, the next free-tier model answers instead.
+  MODELS: "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite",
   DATA_URL: "https://gbv229.github.io/rochester-cre/data/analyst-context.json",
   ALLOWED_ORIGINS: "https://gbv229.github.io,http://localhost:3000",
 };
@@ -34,7 +35,7 @@ export default {
     const reply = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { ...cors, "Content-Type": "application/json" } });
 
     if (request.method === "OPTIONS") return new Response(null, { headers: cors });
-    if (request.method === "GET") return reply({ ok: true, model: cfg.MODEL });
+    if (request.method === "GET") return reply({ ok: true, models: modelList(cfg) });
     if (request.method !== "POST") return reply({ error: "Use POST." }, 405);
     if (!allowed.includes(origin)) return reply({ error: "This analyst only answers requests from the RochesterCRE site." }, 403);
     if (!env.GEMINI_API_KEY) return reply({ error: "The analyst isn't configured yet: GEMINI_API_KEY is missing." }, 500);
@@ -60,24 +61,45 @@ export default {
       .filter((m) => typeof m.content === "string")
       .map((m) => ({ role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content.slice(0, 4000) }] }));
 
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${cfg.MODEL}:generateContent`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: system }] },
-        contents,
-        generationConfig: { temperature: 0.3, maxOutputTokens: 1400 },
-      }),
+    const payload = JSON.stringify({
+      systemInstruction: { parts: [{ text: system }] },
+      contents,
+      generationConfig: { temperature: 0.3, maxOutputTokens: 1400 },
     });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok) {
-      const msg = data?.error?.message || `Gemini returned ${res.status}`;
-      return reply({ error: res.status === 429 ? "The free AI quota is used up for now. Try again later." : msg }, res.status === 429 ? 429 : 502);
+
+    let lastError = "The AI service didn't respond. Try again in a moment.";
+    let quota = false;
+    for (const model of modelList(cfg)) {
+      for (let attempt = 0; attempt < 2; attempt++) {
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
+          body: payload,
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok) {
+          const text = (data.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("").trim();
+          if (text) return reply({ answer: text, model });
+          lastError = "The model returned an empty answer. Try rephrasing the question.";
+          break;
+        }
+        lastError = data?.error?.message || `Gemini returned ${res.status}`;
+        if (res.status === 429) { quota = true; break; }          // quota for this model: move to the next one
+        if (res.status === 503 || res.status === 500) {           // overloaded: brief pause, retry once, then next model
+          if (attempt === 0) { await new Promise((r) => setTimeout(r, 1200)); continue; }
+          break;
+        }
+        if (res.status === 404 || res.status === 400 && /model/i.test(lastError)) break; // model unavailable: next one
+        return reply({ error: lastError }, 502);                  // auth or request problem: stop
+      }
     }
-    const text = (data.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("").trim();
-    return reply({ answer: text || "I couldn't produce an answer to that. Try rephrasing the question.", model: cfg.MODEL });
+    return reply({ error: quota ? "Today's free AI quota is used up. Try again later." : "The AI models are busy right now. Try again in a minute." }, 503);
   },
 };
+
+function modelList(cfg) {
+  return String(cfg.MODELS || cfg.MODEL || DEFAULTS.MODELS).split(",").map((m) => m.trim()).filter(Boolean);
+}
 
 async function loadContext(url) {
   if (cache.ctx && Date.now() - cache.at < 60 * 60 * 1000) return cache.ctx;

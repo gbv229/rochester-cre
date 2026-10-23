@@ -3,6 +3,6 @@ main = "src/index.js"
 compatibility_date = "2026-10-01"
 
 [vars]
-MODEL = "gemini-3.8-flash"
+MODELS = "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite"
 DATA_URL = "https://gbv229.github.io/rochester-cre/data/analyst-context.json"
 ALLOWED_ORIGINS = "https://gbv229.github.io,http://localhost:3000"
