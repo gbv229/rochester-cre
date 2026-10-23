@@ -1,5 +1,5 @@
 "use client";
-import { MapContainer, TileLayer, CircleMarker, Popup, LayersControl, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, CircleMarker, Popup, LayersControl, LayerGroup, useMap } from "react-leaflet";
 import { useEffect } from "react";
 import type { Property } from "../lib/data";
 import { CATEGORY_COLOR, usdShort, BASE } from "../lib/data";
@@ -28,13 +28,20 @@ const radius = (v: number) => Math.max(4, Math.min(22, Math.sqrt(v / 1e6) * 2.2)
 
 export default function LeafletMap({ points, focusId, center = [43.14, -77.6], zoom = 10, scrollWheelZoom = false, fitToPoints }: Props) {
   return (
-    <MapContainer center={center} zoom={zoom} scrollWheelZoom={scrollWheelZoom} style={{ height: "100%", width: "100%" }}>
+    <MapContainer center={center} zoom={zoom} maxZoom={18} scrollWheelZoom={scrollWheelZoom} style={{ height: "100%", width: "100%" }}>
       <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="Streets">
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-          />
+          <LayerGroup>
+            <TileLayer
+              attribution="Basemap &copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors"
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+              maxZoom={16}
+            />
+            <TileLayer
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}"
+              maxZoom={16}
+            />
+          </LayerGroup>
         </LayersControl.BaseLayer>
         <LayersControl.BaseLayer name="Aerial">
           <TileLayer

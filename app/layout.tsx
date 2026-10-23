@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="wrap">
             Built by Gage Van Quekelberg. Property data: NYS Office of Real Property Tax Services, Monroe County 2024 and 2025
             final assessment rolls. Underwriting outputs are modeled estimates, not appraisals or offers. Aerial imagery © Esri,
-            Maxar, Earthstar Geographics. Basemap © OpenStreetMap contributors, © CARTO.
+            Maxar, Earthstar Geographics. Basemap © Esri, HERE, Garmin, OpenStreetMap contributors.
           </div>
         </footer>
       </body>
