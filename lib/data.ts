@@ -126,3 +126,29 @@ export function groupSum(key: keyof Property, list = properties) {
   }
   return out;
 }
+
+/** Groups owner-of-record names that belong to the same organization. */
+const OWNER_GROUPS: [RegExp, string][] = [
+  [/wegmans/i, "Wegmans Food Markets"],
+  [/paychex/i, "Paychex"],
+  [/universit(y|e) of roch|univ.*roch/i, "University of Rochester"],
+  [/comida/i, "COMIDA (IDA-held leases)"],
+  [/kodak/i, "Eastman Kodak"],
+  [/rochester general|grhs/i, "Rochester Regional Health"],
+  [/meridian centre/i, "Meridian Centre Associates"],
+  [/costello/i, "Anthony J. Costello & Son"],
+  [/wal-?mart/i, "Walmart"],
+  [/lowe'?s/i, "Lowe's"],
+  [/city of rochester|urban renewal/i, "City of Rochester"],
+  [/real mckeever/i, "Real McKeever"],
+  [/hylan enterprises/i, "Hylan Enterprises"],
+  [/north forest/i, "North Forest Properties"],
+  [/dimarco/i, "DiMarco Group"],
+  [/widewaters/i, "Widewaters"],
+  [/sibley/i, "Sibley redevelopment entities"],
+  [/xerox/i, "Xerox"],
+];
+export function ownerGroup(owner: string) {
+  for (const [re, name] of OWNER_GROUPS) if (re.test(owner)) return name;
+  return owner;
+}

@@ -19,8 +19,13 @@ cash flow model on any one of them.
   NOI, debt service, CFBT, reversion). Outputs are levered and unlevered IRR, equity multiple, cash-on-cash, DSCR,
   debt yield and breakeven occupancy, plus an IRR sensitivity grid of purchase price against exit cap. Every
   assumption can be edited.
-- **Market page.** Rochester office, industrial, retail and multifamily fundamentals from broker reports, set beside
-  the assessment-roll trend for the tracked parcels.
+- **Market analysis.** The Rochester economy from FRED (unemployment against the US, payrolls, manufacturing jobs,
+  home prices, income, population). Also cap-rate spreads to the 10-year Treasury, broker fundamentals by sector,
+  ownership concentration, the distribution of assessment changes, and a municipality breakdown.
+- **Investment considerations.** Diligence prompts on every property, generated from its own data: reassessment
+  jumps or cuts, PILOT tax step-up risk, land-heavy basis, sector vacancy and Treasury spread.
+- **AI analyst.** A Gemini-powered assistant, available on its own page and on every property page, that answers
+  from the platform's dataset. It runs through a Cloudflare Worker (`worker/`) so the API key never reaches the browser.
 
 ## Data
 
@@ -30,6 +35,8 @@ cash flow model on any one of them.
 | Cushman & Wakefield / Pyramid Brokerage Rochester MarketBeats, Q2 2026 | Office and industrial vacancy and rents |
 | CBRE, YE 2025 | Retail vacancy |
 | Realtor.com via the Rochester Business Journal; RentCafe | Apartment vacancy and rents |
+| FRED (BLS, FHFA, Census, US Treasury series) | Rochester economy and capital-markets charts |
+| Google Gemini API, free tier | AI analyst |
 | Esri World Imagery | Aerial photography |
 
 Every property page links to its raw source record so any figure can be checked.
@@ -45,9 +52,10 @@ lib/assumptions.ts       Market assumptions by NYS property class, with sources
 app/                     Next.js 15 (App Router, TypeScript), statically exported
 components/              Leaflet maps, aerial imagery, charts
 .github/workflows/       GitHub Actions build and deploy to GitHub Pages
+worker/                  Cloudflare Worker proxying the AI analyst to Gemini (see worker/README.md)
 ```
 
-There is no backend. Pages are pre-rendered at build time, and screening and underwriting run in the browser.
+Pages are pre-rendered at build time, and screening and underwriting run in the browser. The only server-side piece is the analyst's small worker.
 
 ```bash
 pip install -r pipeline/requirements.txt

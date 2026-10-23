@@ -71,8 +71,10 @@ export default function Methodology() {
           <h2>Build</h2>
           <p>
             A Python pipeline (pyproj) cleans the roll extracts and writes a JSON dataset. The site is a statically exported
-            Next.js and TypeScript app with Leaflet maps, deployed to GitHub Pages by GitHub Actions. There's no server: all
-            screening and underwriting runs in the browser.
+            Next.js and TypeScript app with Leaflet maps, deployed to GitHub Pages by GitHub Actions. Screening and
+            underwriting run in the browser. The AI analyst calls Google's Gemini API through a small Cloudflare Worker that
+            holds the API key, accepts requests only from this site and answers only from this dataset. Economic series come
+            from FRED.
           </p>
           <p><a href={`${BASE}/data/properties.csv`}>Download the full dataset (CSV)</a></p>
 

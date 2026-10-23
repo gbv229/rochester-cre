@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import CountyMap from "../../../components/CountyMap";
 import Thumb from "../../../components/Thumb";
 import Underwriter from "./Underwriter";
+import Analyst from "../../../components/Analyst";
+import { SERIES, last } from "../../../lib/economy";
 import {
   properties, byId, comparables, median, CATEGORY_COLOR, usd, usdShort, pct, signedPct, num,
   streetViewUrl, mapsUrl, sourceRecordUrl,
@@ -40,6 +42,26 @@ export default async function PropertyPage({ params }: { params: Promise<{ id: s
   const comps = comparables(p, 6);
   const landShare = (p.landValue / p.marketValue) * 100;
   const yoyDollar = p.marketValue2024 ? p.marketValue - p.marketValue2024 : null;
+  const tsy = last(SERIES.treasury10.data).value;
+  const spreadBps = (a.capRate - tsy) * 100;
+
+  // Investment considerations, derived only from this parcel's data and the market inputs.
+  const notes: { t: string; d: string }[] = [];
+  if (p.yoyPct != null && peerYoy != null) {
+    const diff = p.yoyPct - peerYoy;
+    if (p.yoyPct >= 25) notes.push({ t: "Large reassessment", d: `Value rose ${signedPct(p.yoyPct)} in one roll, versus a ${signedPct(peerYoy)} median for ${p.category.toLowerCase()}. Jumps this size usually reflect new construction, an expansion or a reassessment; confirm which before treating it as market appreciation.` });
+    else if (p.yoyPct <= -10) notes.push({ t: "Assessment cut", d: `Value fell ${signedPct(p.yoyPct)} while the ${p.category.toLowerCase()} median rose ${signedPct(peerYoy)}. Drops like this often follow a tax certiorari settlement, which can signal weaker income or an owner actively managing taxes.` });
+    else if (p.municipality === "Rochester" && p.yoyPct === 0) notes.push({ t: "City roll held flat", d: "The City of Rochester kept most commercial values unchanged on the 2025 roll, so a 0% change reflects the assessor's revaluation cycle rather than the market. A citywide reassessment could reset this value in either direction." });
+    else if (Math.abs(diff) >= 3) notes.push({ t: diff > 0 ? "Outpacing its class" : "Lagging its class", d: `Assessment change of ${signedPct(p.yoyPct)} versus a ${signedPct(peerYoy)} median for tracked ${p.category.toLowerCase()} parcels.` });
+  }
+  if (p.taxStatus === "Fully exempt / PILOT") notes.push({ t: "Tax step-up risk", d: `County taxable value is ${pct(p.taxablePct, 0)} of assessment. A buyer inherits the PILOT schedule; if it burns off during the hold, full taxes on ${usdShort(p.marketValue)} of value would come out of NOI. Model it with higher operating expenses in later years.` });
+  else if (p.taxStatus === "Partially exempt") notes.push({ t: "Partial exemption", d: `Only ${pct(p.taxablePct, 0)} of the assessment is taxable at the county level. Confirm the exemption type and its remaining term.` });
+  if (p.improvementRatio != null && p.improvementRatio < 60) notes.push({ t: "Land-heavy basis", d: `Land is ${pct(100 - p.improvementRatio, 0)} of value (class median ${pct(100 - (peerImpr ?? 0), 0)}). The building may be under-improved for the site, which can support a redevelopment or densification angle.` });
+  if (p.category === "Office") notes.push({ t: p.submarket === "CBD" ? "Downtown office vacancy" : "Suburban office vacancy", d: p.submarket === "CBD" ? "Downtown vacancy is 29.2%, roughly double the suburbs. Leasing risk, re-tenanting capital and conversion potential drive value more than in-place income." : "Suburban vacancy is 15.3% with four straight quarters of positive absorption, a healthier backdrop than downtown's 29.2%." });
+  if (p.category === "Industrial") notes.push({ t: "Industrial demand", d: p.subtype.startsWith("Warehouse") ? "Warehouse and distribution is the tightest segment in the market at 5.6% vacancy." : `Rochester has lost manufacturing jobs since 2015 and manufacturing space is ${p.subtype.startsWith("Light") ? "9.5% (flex)" : "8.0%"} vacant, so tenant credit and re-leasing depth matter.` });
+  if (p.category === "Multifamily") notes.push({ t: "Apartment supply", d: "Metro apartment vacancy rose from 4.9% to 6.6% in 2025 as new supply delivered, while rents grew under 3%. Underwrite concessions on lease-up." });
+  notes.push({ t: "Spread to Treasuries", d: `At a ${pct(a.capRate, 2)} market cap rate, this asset prices ${spreadBps.toFixed(0)} bps over the ${pct(tsy, 2)} 10-year. ${spreadBps < 250 ? "That's thin by historical standards, so returns lean on growth." : "That's within or above the historical 300–400 bps range."}` });
+  if (p.lotAcres && p.lotAcres >= 10) notes.push({ t: "Large site", d: `${num(p.lotAcres, 1)} acres at ${usdShort(p.valuePerAcre)} per acre gives room for pad sites, parking reconfiguration or phased additions.` });
 
   return (
     <div className="wrap">
@@ -159,6 +181,25 @@ export default async function PropertyPage({ params }: { params: Promise<{ id: s
           Change the price to test what you'd pay for that income. Use it to stress-test value, not as an appraisal.
         </p>
         <Underwriter defaults={defaults} basis={a.basis} />
+      </section>
+
+      <section className="split" style={{ marginBottom: 28 }}>
+        <div className="panel">
+          <h2>Investment considerations</h2>
+          <p className="small muted">Generated from this parcel's assessment data and Rochester market inputs. Use them as diligence prompts.</p>
+          <ul className="thesis" style={{ paddingLeft: "1.1rem", margin: 0 }}>
+            {notes.map((n) => <li key={n.t}><strong>{n.t}.</strong> {n.d}</li>)}
+          </ul>
+        </div>
+        <div>
+          <h2>Ask about this property</h2>
+          <Analyst compact propertyId={p.id} suggestions={[
+            "Summarize this property as an investment in five bullets.",
+            "What would I need to pay to hit a 12% levered IRR?",
+            "What diligence questions should I ask the seller?",
+            `How does it compare to the other ${p.subtype.toLowerCase()} parcels?`,
+          ]} />
+        </div>
       </section>
 
       <section className="panel tight" style={{ marginBottom: 20 }}>

@@ -1,0 +1,8 @@
+name = "rochestercre-analyst"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+MODEL = "gemini-3.8-flash"
+DATA_URL = "https://gbv229.github.io/rochester-cre/data/analyst-context.json"
+ALLOWED_ORIGINS = "https://gbv229.github.io,http://localhost:3000"

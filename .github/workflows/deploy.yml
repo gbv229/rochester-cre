@@ -28,6 +28,7 @@ jobs:
         run: npx next build
         env:
           BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_ANALYST_URL: ${{ vars.ANALYST_URL }}
           NEXT_TELEMETRY_DISABLED: 1
       - run: touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v3

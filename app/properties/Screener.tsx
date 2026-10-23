@@ -37,6 +37,7 @@ export default function Screener() {
     setCat(sp.get("category") || "");
     setSub(sp.get("submarket") || "");
     setMuni(sp.get("municipality") || "");
+    setQ(sp.get("q") || "");
   }, [sp]);
 
   const rows = useMemo(() => {
