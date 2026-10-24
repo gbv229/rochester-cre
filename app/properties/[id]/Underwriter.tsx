@@ -1,16 +1,17 @@
 "use client";
 import { useMemo, useState } from "react";
 import { run, type Inputs } from "../../../lib/model";
-import { usd, usdShort, pct, num } from "../../../lib/data";
+import { usd, usdShort, pct, num, type Property } from "../../../lib/data";
 
-type Props = { defaults: Inputs; basis: string };
+type Props = { defaults: Inputs; basis: string; property: Property };
 
 const FIELDS: { k: keyof Inputs; label: string; step: number; group: string; suffix?: string }[] = [
   { k: "price", label: "Purchase price", step: 100000, group: "Acquisition", suffix: "$" },
-  { k: "noi", label: "Year 1 NOI", step: 10000, group: "Acquisition", suffix: "$" },
+  
   { k: "closingCostPct", label: "Closing costs", step: 0.25, group: "Acquisition", suffix: "%" },
+  { k: "pgi", label: "Year 1 potential gross income", step: 10000, group: "Operations", suffix: "$" },
   { k: "vacancy", label: "Vacancy & credit loss", step: 0.5, group: "Operations", suffix: "%" },
-  { k: "opexRatio", label: "Operating expenses (% EGI)", step: 1, group: "Operations", suffix: "%" },
+  { k: "opex", label: "Year 1 operating expenses", step: 10000, group: "Operations", suffix: "$" },
   { k: "incomeGrowth", label: "Income growth", step: 0.25, group: "Operations", suffix: "%" },
   { k: "expenseGrowth", label: "Expense growth", step: 0.25, group: "Operations", suffix: "%" },
   { k: "ltv", label: "Loan-to-value", step: 5, group: "Financing", suffix: "%" },
@@ -19,14 +20,29 @@ const FIELDS: { k: keyof Inputs; label: string; step: number; group: string; suf
   { k: "holdYears", label: "Hold period (years)", step: 1, group: "Exit" },
   { k: "exitCap", label: "Exit cap rate", step: 0.25, group: "Exit", suffix: "%" },
   { k: "sellingCostPct", label: "Selling costs", step: 0.25, group: "Exit", suffix: "%" },
+  { k: "taxStepUp", label: "Added property tax ($/yr)", step: 10000, group: "Property tax step-up", suffix: "$" },
+  { k: "taxStepUpYear", label: "Starting in year (0 = never)", step: 1, group: "Property tax step-up" },
 ];
 
-export default function Underwriter({ defaults, basis }: Props) {
+export default function Underwriter({ defaults, basis, property }: Props) {
   const [inp, setInp] = useState<Inputs>(defaults);
+  const [exporting, setExporting] = useState(false);
+  const [exportError, setExportError] = useState("");
+  const exportExcel = async () => {
+    setExporting(true); setExportError("");
+    try {
+      const { downloadModel } = await import("../../../lib/excel");
+      await downloadModel(property, inp);
+    } catch {
+      setExportError("Couldn't build the Excel file. Try again, or use a desktop browser.");
+    } finally { setExporting(false); }
+  };
   const set = (k: keyof Inputs, v: string) => {
     const n = Number(v);
     if (Number.isNaN(n)) return;
-    const clamp = k === "holdYears" ? Math.min(10, Math.max(1, Math.round(n))) : k === "amortYears" ? Math.max(1, n) : n;
+    const clamp = k === "holdYears" ? Math.min(10, Math.max(1, Math.round(n)))
+      : k === "taxStepUpYear" ? Math.min(10, Math.max(0, Math.round(n)))
+      : k === "amortYears" ? Math.max(1, n) : n;
     setInp((s) => ({ ...s, [k]: clamp }));
   };
   const r = useMemo(() => run(inp), [inp]);
@@ -56,18 +72,26 @@ export default function Underwriter({ defaults, basis }: Props) {
           <p className="small muted">Seeded from Rochester market data. {basis}. Change any input and every output below recalculates.</p>
           <div className="grid g2" style={{ gap: 16 }}>
             {groups.map((g) => (
-              <fieldset key={g} style={{ border: 0, padding: 0, margin: 0, display: "grid", gap: 10 }}>
+              <fieldset key={g} style={{ border: 0, padding: 0, margin: 0, display: "grid", gap: 10, alignContent: "start" }}>
                 <legend style={{ fontWeight: 650, fontSize: "0.9rem", marginBottom: 6 }}>{g}</legend>
                 {FIELDS.filter((f) => f.group === g).map((f) => (
                   <label key={f.k} className="field">
                     {f.label}{f.suffix === "%" ? " (%)" : ""}
-                    <input type="number" step={f.step} value={Number(inp[f.k].toFixed(f.suffix === "$" ? 0 : 3))} onChange={(e) => set(f.k, e.target.value)} />
+                    <input type="number" step={f.step} value={Number((inp[f.k] ?? 0).toFixed(f.suffix === "$" ? 0 : 3))} onChange={(e) => set(f.k, e.target.value)} />
                   </label>
                 ))}
               </fieldset>
             ))}
           </div>
-          <button className="btn" style={{ marginTop: 14 }} onClick={() => setInp(defaults)}>Reset to market defaults</button>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 14 }}>
+            <button className="btn primary" onClick={exportExcel} disabled={exporting}>{exporting ? "Building workbook…" : "Download Excel model"}</button>
+            {property.taxStatus !== "Fully taxable" && (inp.taxStepUpYear || 0) === 0 && (
+              <button className="btn" onClick={() => setInp((s) => ({ ...s, taxStepUpYear: 3 }))}>Model full taxes from year 3</button>
+            )}
+            <button className="btn" onClick={() => setInp(defaults)}>Reset to market defaults</button>
+          </div>
+          <p className="tiny faint" style={{ margin: "8px 0 0" }}>The workbook uses live formulas and named inputs, so it recalculates in Excel exactly like this model.</p>
+          {exportError && <p className="small down" role="alert">{exportError}</p>}
         </div>
 
         <div className="grid" style={{ gap: 16 }}>
@@ -109,6 +133,7 @@ export default function Underwriter({ defaults, basis }: Props) {
               <Line label="Vacancy & credit loss" vals={r.years.map((y) => -y.vacancyLoss)} />
               <Line label="Effective gross income" vals={r.years.map((y) => y.egi)} strong />
               <Line label="Operating expenses" vals={r.years.map((y) => -y.opex)} />
+              {r.years.some((y) => y.taxStepUp > 0) && <Line label="Property tax step-up" vals={r.years.map((y) => -y.taxStepUp)} />}
               <Line label="Net operating income" vals={r.years.map((y) => y.noi)} strong />
               <Line label="Debt service" vals={r.years.map((y) => -y.debtService)} />
               <Line label="Cash flow before tax" vals={r.years.map((y) => y.cfbt)} strong />
@@ -123,11 +148,11 @@ export default function Underwriter({ defaults, basis }: Props) {
 
       <div className="panel">
         <h2>Levered IRR sensitivity</h2>
-        <p className="small muted">Purchase price across with NOI held constant, exit cap rate down. Green clears a 10% hurdle, red falls short. The outlined cell is the current case.</p>
+        <p className="small muted">Purchase price across with income held constant, exit cap rate down. Green clears a 10% hurdle, red falls short. The outlined cell is the current case.</p>
         <div className="tablewrap">
           <table className="heat">
             <thead>
-              <tr><th>Exit cap \ Price</th>{priceSteps.map((d) => <th key={d} className="n">{usdShort(inp.price * (1 + d / 100))}<div className="tiny faint">{pct((inp.noi / (inp.price * (1 + d / 100))) * 100, 2)} cap</div></th>)}</tr>
+              <tr><th>Exit cap \ Price</th>{priceSteps.map((d) => <th key={d} className="n">{usdShort(inp.price * (1 + d / 100))}<div className="tiny faint">{pct((r.goingInNoi / (inp.price * (1 + d / 100))) * 100, 2)} cap</div></th>)}</tr>
             </thead>
             <tbody>
               {capSteps.map((dc, i) => (

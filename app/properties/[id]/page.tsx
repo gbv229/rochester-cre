@@ -10,6 +10,8 @@ import {
   streetViewUrl, mapsUrl, sourceRecordUrl,
 } from "../../../lib/data";
 import { assumptionsFor, DEBT_DEFAULTS } from "../../../lib/assumptions";
+import { run } from "../../../lib/model";
+import { defaultInputs } from "../../../lib/defaults";
 
 export function generateStaticParams() {
   return properties.map((p) => ({ id: p.id }));
@@ -25,13 +27,8 @@ export default async function PropertyPage({ params }: { params: Promise<{ id: s
   if (!p) notFound();
 
   const a = assumptionsFor(p.classCode, p.submarket);
-  const defaults = {
-    price: p.marketValue, noi: Math.round(p.marketValue * a.capRate / 100), vacancy: a.vacancy, opexRatio: a.opexRatio,
-    incomeGrowth: a.incomeGrowth, expenseGrowth: a.expenseGrowth,
-    ltv: DEBT_DEFAULTS.ltv, rate: DEBT_DEFAULTS.rate, amortYears: DEBT_DEFAULTS.amortYears,
-    holdYears: DEBT_DEFAULTS.holdYears, exitCap: a.capRate + DEBT_DEFAULTS.exitCapSpreadBps / 100,
-    sellingCostPct: DEBT_DEFAULTS.sellingCostPct, closingCostPct: DEBT_DEFAULTS.closingCostPct,
-  };
+  const defaults = defaultInputs(p);
+  const baseNoi = defaults.pgi * (1 - defaults.vacancy / 100) - defaults.opex;
 
   const peers = properties.filter((q) => q.category === p.category);
   const sameType = properties.filter((q) => q.subtype === p.subtype);
@@ -54,8 +51,15 @@ export default async function PropertyPage({ params }: { params: Promise<{ id: s
     else if (p.municipality === "Rochester" && p.yoyPct === 0) notes.push({ t: "City roll held flat", d: "The City of Rochester kept most commercial values unchanged on the 2025 roll, so a 0% change reflects the assessor's revaluation cycle rather than the market. A citywide reassessment could reset this value in either direction." });
     else if (Math.abs(diff) >= 3) notes.push({ t: diff > 0 ? "Outpacing its class" : "Lagging its class", d: `Assessment change of ${signedPct(p.yoyPct)} versus a ${signedPct(peerYoy)} median for tracked ${p.category.toLowerCase()} parcels.` });
   }
-  if (p.taxStatus === "Fully exempt / PILOT") notes.push({ t: "Tax step-up risk", d: `County taxable value is ${pct(p.taxablePct, 0)} of assessment. A buyer inherits the PILOT schedule; if it burns off during the hold, full taxes on ${usdShort(p.marketValue)} of value would come out of NOI. Model it with higher operating expenses in later years.` });
-  else if (p.taxStatus === "Partially exempt") notes.push({ t: "Partial exemption", d: `Only ${pct(p.taxablePct, 0)} of the assessment is taxable at the county level. Confirm the exemption type and its remaining term.` });
+  // Property tax: turn the PILOT / exemption risk into dollars and IRR.
+  const egiY1 = defaults.pgi * (1 - defaults.vacancy / 100);
+  const baseRun = run(defaults);
+  const stepRun = (defaults.taxStepUp ?? 0) > 0 ? run({ ...defaults, taxStepUpYear: 3 }) : null;
+  if (p.taxStatus !== "Fully taxable" && stepRun) {
+    notes.push({ t: "Tax step-up risk", d: `Taxes at full assessment would run about ${usdShort(p.estTaxFull)} a year (${pct(p.effectiveTaxRate, 2)} of value), versus roughly ${usdShort(p.estTaxCurrent ?? 0)} on the currently taxable share. That gap is ${pct((defaults.taxStepUp! / baseNoi) * 100, 0)} of implied NOI. If the ${p.taxStatus === "Fully exempt / PILOT" ? "PILOT" : "exemption"} ended in year 3, levered IRR would fall from ${pct(baseRun.leveredIrr)} to ${pct(stepRun.leveredIrr)}. Real PILOTs usually phase in, so treat this as the downside bound and get the actual schedule.` });
+  } else if (p.estTaxPrior && p.estTaxFull - p.estTaxPrior > 50000) {
+    notes.push({ t: "Reassessment raised the tax bill", d: `At current rates the new assessment implies about ${usdShort(p.estTaxFull)} in annual taxes, up roughly ${usdShort(p.estTaxFull - p.estTaxPrior)} from the 2024 value. That increase alone is ${pct(((p.estTaxFull - p.estTaxPrior) / baseNoi) * 100, 1)} of implied NOI, so check whether the owner has filed a grievance and underwrite taxes on the 2025 value.` });
+  }
   if (p.improvementRatio != null && p.improvementRatio < 60) notes.push({ t: "Land-heavy basis", d: `Land is ${pct(100 - p.improvementRatio, 0)} of value (class median ${pct(100 - (peerImpr ?? 0), 0)}). The building may be under-improved for the site, which can support a redevelopment or densification angle.` });
   if (p.category === "Office") notes.push({ t: p.submarket === "CBD" ? "Downtown office vacancy" : "Suburban office vacancy", d: p.submarket === "CBD" ? "Downtown vacancy is 29.2%, roughly double the suburbs. Leasing risk, re-tenanting capital and conversion potential drive value more than in-place income." : "Suburban vacancy is 15.3% with four straight quarters of positive absorption, a healthier backdrop than downtown's 29.2%." });
   if (p.category === "Industrial") notes.push({ t: "Industrial demand", d: p.subtype.startsWith("Warehouse") ? "Warehouse and distribution is the tightest segment in the market at 5.6% vacancy." : `Rochester has lost manufacturing jobs since 2015 and manufacturing space is ${p.subtype.startsWith("Light") ? "9.5% (flex)" : "8.0%"} vacant, so tenant credit and re-leasing depth matter.` });
@@ -173,14 +177,39 @@ export default async function PropertyPage({ params }: { params: Promise<{ id: s
         </div>
       </section>
 
+      <section className="panel" style={{ marginBottom: 28 }}>
+        <h2>Property taxes</h2>
+        <div className="split" style={{ gap: 24 }}>
+          <div>
+            <div className="figs">
+              <div className="fig"><div className="k">Est. tax at full assessment</div><div className="v">{usdShort(p.estTaxFull)}</div><div className="s">{pct(p.effectiveTaxRate, 2)} of market value</div></div>
+              <div className="fig"><div className="k">Est. tax on taxable share</div><div className="v">{usdShort(p.estTaxCurrent)}</div><div className="s">{p.taxStatus}</div></div>
+              <div className="fig"><div className="k">{p.taxStatus === "Fully taxable" ? "Share of implied EGI" : "If fully taxed, share of EGI"}</div><div className="v">{pct((p.estTaxFull / egiY1) * 100, 1)}</div><div className="s">{p.taxStatus === "Fully taxable" ? `Inside the ${pct(a.opexRatio, 0)} expense ratio` : "Not in the default expenses"}</div></div>
+              <div className="fig"><div className="k">Change from 2024 value</div><div className="v">{p.estTaxPrior ? `${p.estTaxFull >= p.estTaxPrior ? "+" : "−"}${usdShort(Math.abs(p.estTaxFull - p.estTaxPrior))}` : "—"}</div><div className="s">{p.taxStatus === "Fully taxable" ? "Same rates, new assessment" : "Full-tax basis, same rates"}</div></div>
+            </div>
+          </div>
+          <div>
+            <table>
+              <tbody>
+                <tr><td>County{p.municipality === "Rochester" ? " (incl. Pure Waters)" : ""}</td><td className="n">${p.taxRates.county.toFixed(2)}</td></tr>
+                <tr><td>{p.municipality === "Rochester" ? "City" : "Town"}</td><td className="n">${p.taxRates.municipal.toFixed(2)}</td></tr>
+                <tr><td>School ({p.schoolDistrict})</td><td className="n">${p.taxRates.school.toFixed(2)}</td></tr>
+                <tr className="total"><td>Combined, per $1,000</td><td className="n">${p.taxRateTotal.toFixed(2)}</td></tr>
+              </tbody>
+            </table>
+            <p className="tiny faint" style={{ margin: "8px 0 0" }}>{p.taxBasis}. Excludes special districts (fire, sewer, library) and village taxes, so actual town bills run higher. PILOT payments aren't on the roll.</p>
+          </div>
+        </div>
+      </section>
+
       <section style={{ marginBottom: 28 }}>
         <h2>Underwriting</h2>
         <p className="muted">
           A five-year levered model with the assessor's full market value as the purchase price. Assessment rolls don't publish
-          rent rolls, so year 1 NOI starts at market value times a market cap rate, then grosses up through vacancy and expenses.
-          Change the price to test what you'd pay for that income. Use it to stress-test value, not as an appraisal.
+          rent rolls, so default income is backed out of market value at a market cap rate: gross income, less vacancy, less
+          operating expenses, gives NOI. Change price, rents, vacancy or expenses to stress-test it. It's not an appraisal.
         </p>
-        <Underwriter defaults={defaults} basis={a.basis} />
+        <Underwriter defaults={defaults} basis={a.basis} property={p} />
       </section>
 
       <section className="split" style={{ marginBottom: 28 }}>

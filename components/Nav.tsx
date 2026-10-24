@@ -7,8 +7,9 @@ const LINKS = [
   { href: "/properties/", label: "Screener" },
   { href: "/map/", label: "Map" },
   { href: "/market/", label: "Market" },
+  { href: "/case-study/", label: "Case study" },
   { href: "/analyst/", label: "AI analyst" },
-  { href: "/methodology/", label: "Methodology" },
+  { href: "/about/", label: "About" },
 ];
 
 export default function Nav() {

@@ -19,6 +19,13 @@ cash flow model on any one of them.
   NOI, debt service, CFBT, reversion). Outputs are levered and unlevered IRR, equity multiple, cash-on-cash, DSCR,
   debt yield and breakeven occupancy, plus an IRR sensitivity grid of purchase price against exit cap. Every
   assumption can be edited.
+- **Excel export.** Each property's model downloads as a workbook with live formulas and named inputs
+  (`lib/excel.ts`). `scripts/excel-check.mts` generates test workbooks; recalculated in LibreOffice, every output
+  matches the site's model to within floating-point precision.
+- **Property taxes.** Estimated tax for every parcel from NYS full-value rates (county, town, school) and the City of
+  Rochester's non-homestead rates. A PILOT step-up input turns exemption risk into a dollar and IRR figure.
+- **Case study.** An investment memo on The Province, student housing at RIT (`/case-study/`). Every figure is
+  computed from the model at build time.
 - **Market analysis.** The Rochester economy from FRED (unemployment against the US, payrolls, manufacturing jobs,
   home prices, income, population). Also cap-rate spreads to the 10-year Treasury, broker fundamentals by sector,
   ownership concentration, the distribution of assessment changes, and a municipality breakdown.
@@ -36,6 +43,7 @@ cash flow model on any one of them.
 | CBRE, YE 2025 | Retail vacancy |
 | Realtor.com via the Rochester Business Journal; RentCafe | Apartment vacancy and rents |
 | FRED (BLS, FHFA, Census, US Treasury series) | Rochester economy and capital-markets charts |
+| NYS OSC tax rates (data.ny.gov `iq85-sdzs`); City of Rochester non-homestead rates | Property tax estimates |
 | Google Gemini API, free tier | AI analyst |
 | Esri World Imagery | Aerial photography |
 
@@ -47,7 +55,9 @@ Every property page links to its raw source record so any figure can be checked.
 pipeline/build_data.py   Python: parse roll extracts, convert state-plane coordinates
                          (EPSG:2262 city / EPSG:32017 towns) to WGS84 with pyproj, derive metrics
 data/properties.json     Clean dataset consumed by the site
-lib/model.ts             DCF engine: amortization, loan balance, IRR (bisection), DSCR, reversion
+lib/model.ts             DCF engine: amortization, loan balance, IRR (bisection), DSCR, reversion, tax step-up
+lib/defaults.ts          Market-default inputs per parcel (income backed out of value at a market cap rate)
+lib/excel.ts             Live-formula Excel export, shared by the browser and the verification script
 lib/assumptions.ts       Market assumptions by NYS property class, with sources
 app/                     Next.js 15 (App Router, TypeScript), statically exported
 components/              Leaflet maps, aerial imagery, charts

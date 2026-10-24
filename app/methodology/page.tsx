@@ -52,17 +52,33 @@ export default function Methodology() {
             before tax, with a reversion at exit priced on the following year's NOI.
           </p>
           <p>
-            Assessment rolls don't publish rent rolls, so the model treats full market value as the purchase price and sets year 1
-            NOI at that value times a market cap rate, then grosses it up through the vacancy and expense assumptions. NOI and price
-            are separate inputs, so you can test what a given income stream is worth at different prices. The outputs are levered and
-            unlevered IRR, equity multiple, cash-on-cash, DSCR, debt yield, breakeven occupancy, and a price-by-exit-cap IRR
-            sensitivity grid. Vacancy defaults are Rochester-specific broker figures; see <Link href="/market/">Market</Link>.
+            Income drives value, as in ARGUS: potential gross income less vacancy less operating expenses gives NOI, so a vacancy or
+            expense shock flows straight through to returns. Assessment rolls don't publish rent rolls, so the defaults treat full
+            market value as the purchase price, take stabilized NOI as that value times a market cap rate, and back out gross income
+            and dollar expenses from the property type's vacancy and expense ratio. The outputs are levered and unlevered IRR, equity
+            multiple, cash-on-cash, DSCR, debt yield, breakeven occupancy, and a price-by-exit-cap IRR sensitivity grid. Vacancy
+            defaults are Rochester-specific broker figures; see <Link href="/market/">Market</Link>.
+          </p>
+          <p>
+            Every property's model downloads as an Excel workbook built with live formulas and named inputs. It was verified by
+            recalculating test workbooks in a spreadsheet engine and matching every output to the site's model.
+          </p>
+
+          <h2>Property taxes</h2>
+          <p>
+            Each parcel's tax estimate applies the latest published full-value rates for its county, town and school district (NYS
+            Office of the State Comptroller). City of Rochester parcels use the city's higher non-homestead rates, which is what
+            commercial property pays. Estimates exclude special districts (fire, sewer, library) and village taxes, so actual town
+            bills run higher. For PILOT and exempt parcels, the model's tax step-up input adds the gap between full and current
+            taxes from a chosen year, which turns exemption risk into a dollar and IRR figure.
           </p>
 
           <h2>Limitations</h2>
           <ul>
             <li>Full market value is the assessor's estimate. It can lag transactions, and it's often negotiated for PILOT properties.</li>
             <li>Income is implied from value, not observed. A property with a real rent roll should be underwritten from that.</li>
+            <li>The state classifies by property code, so specialized assets such as student housing get generic apartment assumptions. The case study shows how to adjust.</li>
+            <li>Tax estimates use the latest published rates and exclude special districts; PILOT payment schedules aren't public in the roll.</li>
             <li>Some large campuses span several parcels, so a single parcel may understate a whole facility.</li>
             <li>Lot size is only computed where the roll reports both frontage and depth; irregular lots show as not reported.</li>
             <li>Aerial imagery is centered on the roll's parcel centroid, which can sit off the building on large or irregular lots.</li>

@@ -30,6 +30,17 @@
   "lat": 43.082736,
   "lon": -77.657254,
   "distanceToCbdMi": 5.54,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 3442711,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 3278034,
   "flags": [
    "10+ acre site"
   ],
@@ -66,6 +77,17 @@
   "lat": 43.08612,
   "lon": -77.655376,
   "distanceToCbdMi": 5.29,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 1608540,
+  "estTaxCurrent": 1608540,
+  "estTaxPrior": 826124,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -103,6 +125,17 @@
   "lat": 43.152081,
   "lon": -77.736119,
   "distanceToCbdMi": 6.29,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 2116966,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 1594075,
   "flags": [
    "Assessment up 10%+ YoY",
    "IDA PILOT structure"
@@ -140,6 +173,17 @@
   "lat": 43.208279,
   "lon": -77.47014,
   "distanceToCbdMi": 7.99,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 1567500,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 1446922,
   "flags": [],
   "rank": 4
  },
@@ -174,6 +218,17 @@
   "lat": 43.120635,
   "lon": -77.697685,
   "distanceToCbdMi": 4.98,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 18.9164
+  },
+  "taxRateTotal": 28.1464,
+  "taxBasis": "Chili / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 1746340,
+  "estTaxCurrent": 1746340,
+  "estTaxPrior": 2139267,
   "flags": [
    "Assessment down 5%+ YoY"
   ],
@@ -210,6 +265,17 @@
   "lat": 43.06378,
   "lon": -77.69084,
   "distanceToCbdMi": 7.51,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 1232643,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 850070,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -246,6 +312,17 @@
   "lat": 43.224567,
   "lon": -77.410162,
   "distanceToCbdMi": 11.2,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 1262882,
+  "estTaxCurrent": 1262882,
+  "estTaxPrior": 1165735,
   "flags": [],
   "rank": 7
  },
@@ -280,6 +357,17 @@
   "lat": 43.217478,
   "lon": -77.452374,
   "distanceToCbdMi": 9.08,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 1185086,
+  "estTaxCurrent": 1185086,
+  "estTaxPrior": 1093925,
   "flags": [],
   "rank": 8
  },
@@ -314,6 +402,17 @@
   "lat": 43.083357,
   "lon": -77.546334,
   "distanceToCbdMi": 5.97,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.2277
+  },
+  "taxRateTotal": 27.2377,
+  "taxBasis": "Pittsford / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.724,
+  "estTaxFull": 1173429,
+  "estTaxCurrent": 1173429,
+  "estTaxPrior": 1013416,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -350,6 +449,17 @@
   "lat": 43.206806,
   "lon": -77.41755,
   "distanceToCbdMi": 10.38,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 1033971,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 954433,
   "flags": [],
   "rank": 10
  },
@@ -384,6 +494,17 @@
   "lat": 43.060729,
   "lon": -77.693032,
   "distanceToCbdMi": 7.75,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 895681,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 897961,
   "flags": [],
   "rank": 11
  },
@@ -418,6 +539,17 @@
   "lat": 43.228363,
   "lon": -77.409463,
   "distanceToCbdMi": 11.34,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 889784,
+  "estTaxCurrent": 889784,
+  "estTaxPrior": 821339,
   "flags": [],
   "rank": 12
  },
@@ -452,6 +584,17 @@
   "lat": 43.240215,
   "lon": -77.678361,
   "distanceToCbdMi": 6.75,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 974519,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 874199,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -489,6 +632,17 @@
   "lat": 43.063891,
   "lon": -77.686135,
   "distanceToCbdMi": 7.38,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 758968,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 655535,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -526,6 +680,17 @@
   "lat": 43.086104,
   "lon": -77.560154,
   "distanceToCbdMi": 5.45,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 737391,
+  "estTaxCurrent": 737391,
+  "estTaxPrior": 476063,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -563,6 +728,17 @@
   "lat": 43.120106,
   "lon": -77.627143,
   "distanceToCbdMi": 2.58,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 1102906,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 1102906,
   "flags": [],
   "rank": 16
  },
@@ -597,6 +773,17 @@
   "lat": 43.083905,
   "lon": -77.496947,
   "distanceToCbdMi": 7.61,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.2277
+  },
+  "taxRateTotal": 27.2377,
+  "taxBasis": "Pittsford / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.724,
+  "estTaxFull": 879638,
+  "estTaxCurrent": 879638,
+  "estTaxPrior": 759689,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -633,6 +820,17 @@
   "lat": 43.069978,
   "lon": -77.67788,
   "distanceToCbdMi": 6.8,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 680913,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 550749,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -670,6 +868,17 @@
   "lat": 43.110236,
   "lon": -77.445214,
   "distanceToCbdMi": 8.94,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 718467,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 660527,
   "flags": [],
   "rank": 19
  },
@@ -704,6 +913,17 @@
   "lat": 43.060569,
   "lon": -77.685921,
   "distanceToCbdMi": 7.57,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 645064,
+  "estTaxCurrent": 645064,
+  "estTaxPrior": 598400,
   "flags": [
    "10+ acre site"
   ],
@@ -740,6 +960,17 @@
   "lat": 43.158727,
   "lon": -77.610519,
   "distanceToCbdMi": 0.22,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 964129,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 964129,
   "flags": [],
   "rank": 21
  },
@@ -774,6 +1005,17 @@
   "lat": 43.134129,
   "lon": -77.436379,
   "distanceToCbdMi": 8.94,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 17.8872
+  },
+  "taxRateTotal": 26.6072,
+  "taxBasis": "Penfield / Penfield school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.661,
+  "estTaxFull": 748457,
+  "estTaxCurrent": 748457,
+  "estTaxPrior": 645221,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -810,6 +1052,17 @@
   "lat": 43.102031,
   "lon": -77.567508,
   "distanceToCbdMi": 4.31,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 802151,
+  "estTaxCurrent": 802151,
+  "estTaxPrior": 728107,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -846,6 +1099,17 @@
   "lat": 43.051272,
   "lon": -77.464637,
   "distanceToCbdMi": 10.33,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 18.2205
+  },
+  "taxRateTotal": 26.7905,
+  "taxBasis": "Perinton / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.679,
+  "estTaxFull": 728513,
+  "estTaxCurrent": 728513,
+  "estTaxPrior": 669761,
   "flags": [],
   "rank": 24
  },
@@ -880,6 +1144,17 @@
   "lat": 43.201838,
   "lon": -77.575605,
   "distanceToCbdMi": 3.66,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.33,
+   "school": 20.2794
+  },
+  "taxRateTotal": 31.9394,
+  "taxBasis": "Irondequoit / East Irondequoit school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.194,
+  "estTaxFull": 859323,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 784598,
   "flags": [],
   "rank": 25
  },
@@ -914,6 +1189,17 @@
   "lat": 43.153325,
   "lon": -77.606744,
   "distanceToCbdMi": 0.28,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 891753,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 891753,
   "flags": [],
   "rank": 26
  },
@@ -948,6 +1234,17 @@
   "lat": 43.154662,
   "lon": -77.605906,
   "distanceToCbdMi": 0.28,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 873161,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 873161,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -984,6 +1281,17 @@
   "lat": 43.045105,
   "lon": -77.672286,
   "distanceToCbdMi": 8.23,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 577672,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 440958,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -1021,6 +1329,17 @@
   "lat": 43.131484,
   "lon": -77.676785,
   "distanceToCbdMi": 3.7,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 787063,
+  "estTaxCurrent": 787063,
+  "estTaxPrior": 628902,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1057,6 +1376,17 @@
   "lat": 43.110618,
   "lon": -77.456029,
   "distanceToCbdMi": 8.43,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 612136,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 542877,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1093,6 +1423,17 @@
   "lat": 43.056015,
   "lon": -77.693647,
   "distanceToCbdMi": 8.04,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 557755,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 555256,
   "flags": [
    "10+ acre site"
   ],
@@ -1129,6 +1470,17 @@
   "lat": 43.154529,
   "lon": -77.604743,
   "distanceToCbdMi": 0.34,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 833985,
+  "estTaxCurrent": 266875,
+  "estTaxPrior": 833985,
   "flags": [],
   "rank": 32
  },
@@ -1163,6 +1515,17 @@
   "lat": 43.17812,
   "lon": -77.688258,
   "distanceToCbdMi": 4.18,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 764003,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 519290,
   "flags": [
    "Assessment up 10%+ YoY",
    "IDA PILOT structure"
@@ -1200,6 +1563,17 @@
   "lat": 43.103119,
   "lon": -77.572654,
   "distanceToCbdMi": 4.12,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 731825,
+  "estTaxCurrent": 731825,
+  "estTaxPrior": 664273,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -1237,6 +1611,17 @@
   "lat": 43.199852,
   "lon": -77.56882,
   "distanceToCbdMi": 3.73,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.33,
+   "school": 20.2794
+  },
+  "taxRateTotal": 31.9394,
+  "taxBasis": "Irondequoit / East Irondequoit school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.194,
+  "estTaxFull": 782515,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 714472,
   "flags": [],
   "rank": 35
  },
@@ -1271,6 +1656,17 @@
   "lat": 43.129067,
   "lon": -77.444924,
   "distanceToCbdMi": 8.59,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 17.8872
+  },
+  "taxRateTotal": 26.6072,
+  "taxBasis": "Penfield / Penfield school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.661,
+  "estTaxFull": 643289,
+  "estTaxCurrent": 643289,
+  "estTaxPrior": 554560,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1307,6 +1703,17 @@
   "lat": 43.224981,
   "lon": -77.459023,
   "distanceToCbdMi": 9.05,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 595567,
+  "estTaxCurrent": 595567,
+  "estTaxPrior": 549753,
   "flags": [],
   "rank": 37
  },
@@ -1341,6 +1748,17 @@
   "lat": 43.254921,
   "lon": -77.614113,
   "distanceToCbdMi": 6.86,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 794676,
+  "estTaxCurrent": 7152,
+  "estTaxPrior": 794676,
   "flags": [],
   "rank": 38
  },
@@ -1375,6 +1793,17 @@
   "lat": 43.042458,
   "lon": -77.664182,
   "distanceToCbdMi": 8.26,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 525708,
+  "estTaxCurrent": 525708,
+  "estTaxPrior": 496870,
   "flags": [],
   "rank": 39
  },
@@ -1409,6 +1838,17 @@
   "lat": 43.105573,
   "lon": -77.741924,
   "distanceToCbdMi": 7.44,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 18.9164
+  },
+  "taxRateTotal": 28.1464,
+  "taxBasis": "Chili / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 671056,
+  "estTaxCurrent": 671056,
+  "estTaxPrior": 435768,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1445,6 +1885,17 @@
   "lat": 43.197496,
   "lon": -77.670592,
   "distanceToCbdMi": 4.16,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 664665,
+  "estTaxCurrent": 664665,
+  "estTaxPrior": 596243,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1481,6 +1932,17 @@
   "lat": 43.067884,
   "lon": -77.40277,
   "distanceToCbdMi": 12.14,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 567300,
+  "estTaxCurrent": 567300,
+  "estTaxPrior": 521549,
   "flags": [],
   "rank": 42
  },
@@ -1515,6 +1977,17 @@
   "lat": 43.106038,
   "lon": -77.805353,
   "distanceToCbdMi": 10.37,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 14.5678
+  },
+  "taxRateTotal": 23.7978,
+  "taxBasis": "Chili / Churchville-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.38,
+  "estTaxFull": 553229,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 677706,
   "flags": [
    "Assessment down 5%+ YoY",
    "IDA PILOT structure"
@@ -1552,6 +2025,17 @@
   "lat": 43.113515,
   "lon": -77.603834,
   "distanceToCbdMi": 2.94,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 675613,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 613249,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1588,6 +2072,17 @@
   "lat": 43.105095,
   "lon": -77.611652,
   "distanceToCbdMi": 3.49,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 14.327
+  },
+  "taxRateTotal": 25.527,
+  "taxBasis": "Brighton / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.553,
+  "estTaxFull": 581865,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 528154,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1624,6 +2119,17 @@
   "lat": 43.040474,
   "lon": -77.616555,
   "distanceToCbdMi": 7.96,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 497137,
+  "estTaxCurrent": 497137,
+  "estTaxPrior": null,
   "flags": [],
   "rank": 46
  },
@@ -1658,6 +2164,17 @@
   "lat": 43.060968,
   "lon": -77.619833,
   "distanceToCbdMi": 6.56,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 487393,
+  "estTaxCurrent": 487393,
+  "estTaxPrior": 423024,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1694,6 +2211,17 @@
   "lat": 43.162353,
   "lon": -77.435266,
   "distanceToCbdMi": 8.89,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 14.8653
+  },
+  "taxRateTotal": 23.5853,
+  "taxBasis": "Penfield / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.359,
+  "estTaxFull": 518090,
+  "estTaxCurrent": 518090,
+  "estTaxPrior": null,
   "flags": [],
   "rank": 48
  },
@@ -1728,6 +2256,17 @@
   "lat": 43.214042,
   "lon": -77.706527,
   "distanceToCbdMi": 6.27,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 611409,
+  "estTaxCurrent": 611409,
+  "estTaxPrior": 548470,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -1764,6 +2303,17 @@
   "lat": 43.105948,
   "lon": -77.810971,
   "distanceToCbdMi": 10.64,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 14.5678
+  },
+  "taxRateTotal": 23.7978,
+  "taxBasis": "Chili / Churchville-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.38,
+  "estTaxFull": 510340,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 625167,
   "flags": [
    "Assessment down 5%+ YoY",
    "IDA PILOT structure"
@@ -1801,6 +2351,17 @@
   "lat": 43.112187,
   "lon": -77.443301,
   "distanceToCbdMi": 8.99,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 513269,
+  "estTaxCurrent": 513269,
+  "estTaxPrior": 471876,
   "flags": [
    "10+ acre site"
   ],
@@ -1837,6 +2398,17 @@
   "lat": 43.20115,
   "lon": -77.446612,
   "distanceToCbdMi": 8.87,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 529392,
+  "estTaxCurrent": 529392,
+  "estTaxPrior": 488670,
   "flags": [],
   "rank": 52
  },
@@ -1871,6 +2443,17 @@
   "lat": 43.160401,
   "lon": -77.768293,
   "distanceToCbdMi": 7.92,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.17,
+   "school": 16.0296
+  },
+  "taxRateTotal": 26.5296,
+  "taxBasis": "Ogden / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.653,
+  "estTaxFull": 562749,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 557122,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -1907,6 +2490,17 @@
   "lat": 43.153335,
   "lon": -77.74432,
   "distanceToCbdMi": 6.71,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 16.0281
+  },
+  "taxRateTotal": 27.6581,
+  "taxBasis": "Gates / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.766,
+  "estTaxFull": 586300,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 500380,
   "flags": [
    "Assessment up 10%+ YoY",
    "IDA PILOT structure"
@@ -1944,6 +2538,17 @@
   "lat": 43.193515,
   "lon": -77.601675,
   "distanceToCbdMi": 2.66,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 698529,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 698529,
   "flags": [],
   "rank": 55
  },
@@ -1978,6 +2583,17 @@
   "lat": 43.045351,
   "lon": -77.459545,
   "distanceToCbdMi": 10.8,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 18.2205
+  },
+  "taxRateTotal": 26.7905,
+  "taxBasis": "Perinton / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.679,
+  "estTaxFull": 560505,
+  "estTaxCurrent": 560505,
+  "estTaxPrior": 515301,
   "flags": [],
   "rank": 56
  },
@@ -2012,6 +2628,17 @@
   "lat": 43.203361,
   "lon": -77.558628,
   "distanceToCbdMi": 4.23,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.33,
+   "school": 20.2794
+  },
+  "taxRateTotal": 31.9394,
+  "taxBasis": "Irondequoit / East Irondequoit school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.194,
+  "estTaxFull": 665403,
+  "estTaxCurrent": 665403,
+  "estTaxPrior": 607542,
   "flags": [],
   "rank": 57
  },
@@ -2046,6 +2673,17 @@
   "lat": 43.10565,
   "lon": -77.542697,
   "distanceToCbdMi": 4.89,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.2277
+  },
+  "taxRateTotal": 27.2377,
+  "taxBasis": "Pittsford / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.724,
+  "estTaxFull": 565465,
+  "estTaxCurrent": 565465,
+  "estTaxPrior": 488355,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2082,6 +2720,17 @@
   "lat": 43.186371,
   "lon": -77.695771,
   "distanceToCbdMi": 4.76,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 581582,
+  "estTaxCurrent": 581582,
+  "estTaxPrior": 521714,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2118,6 +2767,17 @@
   "lat": 43.111479,
   "lon": -77.593642,
   "distanceToCbdMi": 3.18,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 594513,
+  "estTaxCurrent": 594513,
+  "estTaxPrior": 539636,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2154,6 +2814,17 @@
   "lat": 43.067491,
   "lon": -77.668822,
   "distanceToCbdMi": 6.75,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 443457,
+  "estTaxCurrent": 443457,
+  "estTaxPrior": 437846,
   "flags": [
    "10+ acre site"
   ],
@@ -2190,6 +2861,17 @@
   "lat": 43.158363,
   "lon": -77.751233,
   "distanceToCbdMi": 7.05,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 16.0281
+  },
+  "taxRateTotal": 27.6581,
+  "taxBasis": "Gates / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.766,
+  "estTaxFull": 551088,
+  "estTaxCurrent": 551088,
+  "estTaxPrior": 495692,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -2227,6 +2909,17 @@
   "lat": 43.185518,
   "lon": -77.706095,
   "distanceToCbdMi": 5.2,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 16.0078
+  },
+  "taxRateTotal": 27.0778,
+  "taxBasis": "Greece / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.708,
+  "estTaxFull": 539520,
+  "estTaxCurrent": 539520,
+  "estTaxPrior": 483981,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2263,6 +2956,17 @@
   "lat": 43.155517,
   "lon": -77.606353,
   "distanceToCbdMi": 0.25,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 657361,
+  "estTaxCurrent": 657361,
+  "estTaxPrior": 657361,
   "flags": [],
   "rank": 64
  },
@@ -2297,6 +3001,17 @@
   "lat": 43.190573,
   "lon": -77.500588,
   "distanceToCbdMi": 6.08,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 14.8653
+  },
+  "taxRateTotal": 23.5853,
+  "taxBasis": "Penfield / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.359,
+  "estTaxFull": 465415,
+  "estTaxCurrent": 465415,
+  "estTaxPrior": 401221,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2333,6 +3048,17 @@
   "lat": 43.039715,
   "lon": -77.456173,
   "distanceToCbdMi": 11.2,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 12.4462
+  },
+  "taxRateTotal": 21.0162,
+  "taxBasis": "Perinton / Victor school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.102,
+  "estTaxFull": 405575,
+  "estTaxCurrent": 405575,
+  "estTaxPrior": 372867,
   "flags": [],
   "rank": 66
  },
@@ -2367,6 +3093,17 @@
   "lat": 43.088824,
   "lon": -77.591461,
   "distanceToCbdMi": 4.72,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 412535,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 245268,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -2404,6 +3141,17 @@
   "lat": 43.082516,
   "lon": -77.614172,
   "distanceToCbdMi": 5.06,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 411434,
+  "estTaxCurrent": 411434,
+  "estTaxPrior": 286868,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2440,6 +3188,17 @@
   "lat": 43.048406,
   "lon": -77.660015,
   "distanceToCbdMi": 7.81,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 406347,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 375946,
   "flags": [
    "10+ acre site"
   ],
@@ -2476,6 +3235,17 @@
   "lat": 43.086243,
   "lon": -77.607203,
   "distanceToCbdMi": 4.8,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 398742,
+  "estTaxCurrent": 398742,
+  "estTaxPrior": 368762,
   "flags": [
    "10+ acre site"
   ],
@@ -2512,6 +3282,17 @@
   "lat": 43.133129,
   "lon": -77.68912,
   "distanceToCbdMi": 4.22,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 552610,
+  "estTaxCurrent": 552610,
+  "estTaxPrior": 521761,
   "flags": [],
   "rank": 71
  },
@@ -2546,6 +3327,17 @@
   "lat": 43.125275,
   "lon": -77.493368,
   "distanceToCbdMi": 6.31,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 17.8872
+  },
+  "taxRateTotal": 26.6072,
+  "taxBasis": "Penfield / Penfield school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.661,
+  "estTaxFull": 477069,
+  "estTaxCurrent": 477069,
+  "estTaxPrior": 411267,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2582,6 +3374,17 @@
   "lat": 43.083209,
   "lon": -77.628086,
   "distanceToCbdMi": 5.08,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 391074,
+  "estTaxCurrent": 391074,
+  "estTaxPrior": 346494,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -2619,6 +3422,17 @@
   "lat": 43.179727,
   "lon": -77.687076,
   "distanceToCbdMi": 4.16,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 498499,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 447182,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2655,6 +3469,17 @@
   "lat": 43.216516,
   "lon": -77.472635,
   "distanceToCbdMi": 8.16,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 437886,
+  "estTaxCurrent": 437886,
+  "estTaxPrior": 404204,
   "flags": [],
   "rank": 75
  },
@@ -2689,6 +3514,17 @@
   "lat": 43.066862,
   "lon": -77.641045,
   "distanceToCbdMi": 6.32,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 381052,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 371156,
   "flags": [
    "10+ acre site"
   ],
@@ -2725,6 +3561,17 @@
   "lat": 43.018979,
   "lon": -77.669995,
   "distanceToCbdMi": 9.9,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 380303,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 413372,
   "flags": [
    "Assessment down 5%+ YoY",
    "10+ acre site"
@@ -2762,6 +3609,17 @@
   "lat": 43.205579,
   "lon": -77.661286,
   "distanceToCbdMi": 4.27,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 461112,
+  "estTaxCurrent": 461112,
+  "estTaxPrior": 413642,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2798,6 +3656,17 @@
   "lat": 43.093203,
   "lon": -77.629496,
   "distanceToCbdMi": 4.41,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 360796,
+  "estTaxCurrent": 360796,
+  "estTaxPrior": 359245,
   "flags": [
    "10+ acre site"
   ],
@@ -2834,6 +3703,17 @@
   "lat": 43.085762,
   "lon": -77.621683,
   "distanceToCbdMi": 4.86,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 359467,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 351521,
   "flags": [],
   "rank": 80
  },
@@ -2868,6 +3748,17 @@
   "lat": 43.088521,
   "lon": -77.594461,
   "distanceToCbdMi": 4.72,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 355392,
+  "estTaxCurrent": 340465,
+  "estTaxPrior": 207130,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -2905,6 +3796,17 @@
   "lat": 43.180013,
   "lon": -77.572022,
   "distanceToCbdMi": 2.6,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 534255,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 534255,
   "flags": [
    "IDA PILOT structure",
    "10+ acre site"
@@ -2942,6 +3844,17 @@
   "lat": 43.18297,
   "lon": -77.671543,
   "distanceToCbdMi": 3.57,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 440342,
+  "estTaxCurrent": 440342,
+  "estTaxPrior": 395012,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -2978,6 +3891,17 @@
   "lat": 43.155635,
   "lon": -77.607978,
   "distanceToCbdMi": 0.17,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 514601,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 514601,
   "flags": [],
   "rank": 84
  },
@@ -3012,6 +3936,17 @@
   "lat": 43.113896,
   "lon": -77.608584,
   "distanceToCbdMi": 2.89,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 451308,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 409649,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3048,6 +3983,17 @@
   "lat": 43.07095,
   "lon": -77.445604,
   "distanceToCbdMi": 10.2,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 366699,
+  "estTaxCurrent": 366699,
+  "estTaxPrior": 337127,
   "flags": [],
   "rank": 86
  },
@@ -3082,6 +4028,17 @@
   "lat": 43.156691,
   "lon": -77.605679,
   "distanceToCbdMi": 0.29,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 498499,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 498499,
   "flags": [],
   "rank": 87
  },
@@ -3116,6 +4073,17 @@
   "lat": 43.192765,
   "lon": -77.497077,
   "distanceToCbdMi": 6.3,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 14.8653
+  },
+  "taxRateTotal": 23.5853,
+  "taxBasis": "Penfield / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.359,
+  "estTaxFull": 353876,
+  "estTaxCurrent": 353876,
+  "estTaxPrior": 305066,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3152,6 +4120,17 @@
   "lat": 43.19832,
   "lon": -77.630899,
   "distanceToCbdMi": 3.11,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 492134,
+  "estTaxCurrent": 492134,
+  "estTaxPrior": 492134,
   "flags": [],
   "rank": 89
  },
@@ -3186,6 +4165,17 @@
   "lat": 43.133177,
   "lon": -77.496338,
   "distanceToCbdMi": 6.0,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 17.8872
+  },
+  "taxRateTotal": 26.6072,
+  "taxBasis": "Penfield / Penfield school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.661,
+  "estTaxFull": 393786,
+  "estTaxCurrent": 393786,
+  "estTaxPrior": 339471,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3222,6 +4212,17 @@
   "lat": 43.08502,
   "lon": -77.628021,
   "distanceToCbdMi": 4.95,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 318562,
+  "estTaxCurrent": 318562,
+  "estTaxPrior": 244246,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -3259,6 +4260,17 @@
   "lat": 43.107076,
   "lon": -77.621012,
   "distanceToCbdMi": 3.39,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 14.327
+  },
+  "taxRateTotal": 25.527,
+  "taxBasis": "Brighton / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.553,
+  "estTaxFull": 367762,
+  "estTaxCurrent": 367762,
+  "estTaxPrior": 333814,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3295,6 +4307,17 @@
   "lat": 43.099221,
   "lon": -77.633229,
   "distanceToCbdMi": 4.05,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 14.327
+  },
+  "taxRateTotal": 25.527,
+  "taxBasis": "Brighton / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.553,
+  "estTaxFull": 365970,
+  "estTaxCurrent": 365970,
+  "estTaxPrior": 332188,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3331,6 +4354,17 @@
   "lat": 43.052522,
   "lon": -77.652934,
   "distanceToCbdMi": 7.43,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 313282,
+  "estTaxCurrent": 313282,
+  "estTaxPrior": 222454,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -3368,6 +4402,17 @@
   "lat": 43.239655,
   "lon": -77.643682,
   "distanceToCbdMi": 6.03,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 396276,
+  "estTaxCurrent": 396276,
+  "estTaxPrior": 396875,
   "flags": [],
   "rank": 95
  },
@@ -3402,6 +4447,17 @@
   "lat": 43.103659,
   "lon": -77.794456,
   "distanceToCbdMi": 9.91,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 14.5678
+  },
+  "taxRateTotal": 23.7978,
+  "taxBasis": "Chili / Churchville-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.38,
+  "estTaxFull": 333736,
+  "estTaxCurrent": 333736,
+  "estTaxPrior": 327061,
   "flags": [],
   "rank": 96
  },
@@ -3436,6 +4492,17 @@
   "lat": 43.226066,
   "lon": -77.660227,
   "distanceToCbdMi": 5.45,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 390489,
+  "estTaxCurrent": 390489,
+  "estTaxPrior": 350293,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3472,6 +4539,17 @@
   "lat": 43.066127,
   "lon": -77.673259,
   "distanceToCbdMi": 6.93,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 302449,
+  "estTaxCurrent": 302449,
+  "estTaxPrior": 301716,
   "flags": [],
   "rank": 98
  },
@@ -3506,6 +4584,17 @@
   "lat": 43.078226,
   "lon": -77.625993,
   "distanceToCbdMi": 5.4,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 299579,
+  "estTaxCurrent": 299579,
+  "estTaxPrior": 276571,
   "flags": [
    "10+ acre site"
   ],
@@ -3542,6 +4631,17 @@
   "lat": 43.196935,
   "lon": -77.928729,
   "distanceToCbdMi": 16.25,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.0,
+   "school": 17.0762
+  },
+  "taxRateTotal": 26.4062,
+  "taxBasis": "Sweden / Brockport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.641,
+  "estTaxFull": 358633,
+  "estTaxCurrent": 358633,
+  "estTaxPrior": 358633,
   "flags": [
    "10+ acre site"
   ],
@@ -3578,6 +4678,17 @@
   "lat": 43.102646,
   "lon": -77.582424,
   "distanceToCbdMi": 3.94,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 398098,
+  "estTaxCurrent": 398098,
+  "estTaxPrior": 361352,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3614,6 +4725,17 @@
   "lat": 43.102166,
   "lon": -77.484155,
   "distanceToCbdMi": 7.4,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 0.0,
+   "school": 18.0855
+  },
+  "taxRateTotal": 24.4155,
+  "taxBasis": "East Rochester / East Rochester school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.442,
+  "estTaxFull": 328474,
+  "estTaxCurrent": 328474,
+  "estTaxPrior": 292547,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3650,6 +4772,17 @@
   "lat": 43.18856,
   "lon": -77.677561,
   "distanceToCbdMi": 4.04,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 373874,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 335386,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3686,6 +4819,17 @@
   "lat": 43.186036,
   "lon": -77.685532,
   "distanceToCbdMi": 4.29,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 373874,
+  "estTaxCurrent": 373874,
+  "estTaxPrior": 335386,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3722,6 +4866,17 @@
   "lat": 43.080603,
   "lon": -77.628089,
   "distanceToCbdMi": 5.25,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 292399,
+  "estTaxCurrent": 292399,
+  "estTaxPrior": 263401,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -3759,6 +4914,17 @@
   "lat": 43.194589,
   "lon": -77.597589,
   "distanceToCbdMi": 2.78,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 438241,
+  "estTaxCurrent": 438241,
+  "estTaxPrior": 438241,
   "flags": [],
   "rank": 106
  },
@@ -3793,6 +4959,17 @@
   "lat": 43.15348,
   "lon": -77.6044,
   "distanceToCbdMi": 0.38,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 434921,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 434921,
   "flags": [],
   "rank": 107
  },
@@ -3827,6 +5004,17 @@
   "lat": 43.211855,
   "lon": -77.471331,
   "distanceToCbdMi": 8.05,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 323116,
+  "estTaxCurrent": 323116,
+  "estTaxPrior": 343597,
   "flags": [
    "Land-heavy (redevelopment angle)",
    "Assessment down 5%+ YoY"
@@ -3864,6 +5052,17 @@
   "lat": 43.084823,
   "lon": -77.611216,
   "distanceToCbdMi": 4.89,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 286293,
+  "estTaxCurrent": 286293,
+  "estTaxPrior": 259929,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -3900,6 +5099,17 @@
   "lat": 43.124295,
   "lon": -77.619549,
   "distanceToCbdMi": 2.21,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 428281,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 428281,
   "flags": [],
   "rank": 110
  },
@@ -3934,6 +5144,17 @@
   "lat": 43.107299,
   "lon": -77.450586,
   "distanceToCbdMi": 8.77,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 308325,
+  "estTaxCurrent": 308325,
+  "estTaxPrior": 283459,
   "flags": [],
   "rank": 111
  },
@@ -3968,6 +5189,17 @@
   "lat": 43.120638,
   "lon": -77.59297,
   "distanceToCbdMi": 2.59,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 373064,
+  "estTaxCurrent": 373064,
+  "estTaxPrior": 374747,
   "flags": [],
   "rank": 112
  },
@@ -4002,6 +5234,17 @@
   "lat": 43.145012,
   "lon": -77.713625,
   "distanceToCbdMi": 5.21,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 387790,
+  "estTaxCurrent": 387790,
+  "estTaxPrior": 271598,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -4039,6 +5282,17 @@
   "lat": 43.191081,
   "lon": -77.704512,
   "distanceToCbdMi": 5.3,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 356842,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 320108,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4075,6 +5329,17 @@
   "lat": 43.112693,
   "lon": -77.486015,
   "distanceToCbdMi": 6.98,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 0.0,
+   "school": 18.0855
+  },
+  "taxRateTotal": 24.4155,
+  "taxBasis": "East Rochester / East Rochester school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.442,
+  "estTaxFull": 308698,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 274934,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4111,6 +5376,17 @@
   "lat": 43.200067,
   "lon": -77.946492,
   "distanceToCbdMi": 17.16,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.0,
+   "school": 17.0762
+  },
+  "taxRateTotal": 26.4062,
+  "taxBasis": "Sweden / Brockport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.641,
+  "estTaxFull": 331395,
+  "estTaxCurrent": 331395,
+  "estTaxPrior": 329439,
   "flags": [],
   "rank": 116
  },
@@ -4145,6 +5421,17 @@
   "lat": 43.094396,
   "lon": -77.579091,
   "distanceToCbdMi": 4.53,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 275793,
+  "estTaxCurrent": 275793,
+  "estTaxPrior": 229863,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4181,6 +5468,17 @@
   "lat": 43.208009,
   "lon": -77.677052,
   "distanceToCbdMi": 4.9,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 350802,
+  "estTaxCurrent": 350802,
+  "estTaxPrior": 314691,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4217,6 +5515,17 @@
   "lat": 43.149512,
   "lon": -77.59602,
   "distanceToCbdMi": 0.88,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 401721,
+  "estTaxCurrent": 401721,
+  "estTaxPrior": 428281,
   "flags": [
    "Assessment down 5%+ YoY"
   ],
@@ -4253,6 +5562,17 @@
   "lat": 43.11088,
   "lon": -77.594139,
   "distanceToCbdMi": 3.21,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 354948,
+  "estTaxCurrent": 354948,
+  "estTaxPrior": 322185,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4289,6 +5609,17 @@
   "lat": 43.182258,
   "lon": -77.655992,
   "distanceToCbdMi": 2.91,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 400061,
+  "estTaxCurrent": 400061,
+  "estTaxPrior": 400061,
   "flags": [
    "10+ acre site"
   ],
@@ -4325,6 +5656,17 @@
   "lat": 43.192573,
   "lon": -77.504359,
   "distanceToCbdMi": 5.96,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 14.8653
+  },
+  "taxRateTotal": 23.5853,
+  "taxBasis": "Penfield / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.359,
+  "estTaxFull": 284106,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 244919,
   "flags": [
    "Assessment up 10%+ YoY",
    "IDA PILOT structure"
@@ -4362,6 +5704,17 @@
   "lat": 43.156358,
   "lon": -77.608214,
   "distanceToCbdMi": 0.16,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 398401,
+  "estTaxCurrent": 398401,
+  "estTaxPrior": 664001,
   "flags": [
    "Assessment down 5%+ YoY"
   ],
@@ -4398,6 +5751,17 @@
   "lat": 43.119094,
   "lon": -77.551757,
   "distanceToCbdMi": 3.92,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 350355,
+  "estTaxCurrent": 350355,
+  "estTaxPrior": 318017,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4434,6 +5798,17 @@
   "lat": 43.103956,
   "lon": -77.537558,
   "distanceToCbdMi": 5.16,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.2277
+  },
+  "taxRateTotal": 27.2377,
+  "taxBasis": "Pittsford / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.724,
+  "estTaxFull": 322581,
+  "estTaxCurrent": 322581,
+  "estTaxPrior": 278592,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4470,6 +5845,17 @@
   "lat": 43.213655,
   "lon": -77.712564,
   "distanceToCbdMi": 6.49,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 329453,
+  "estTaxCurrent": 329453,
+  "estTaxPrior": 363336,
   "flags": [
    "Assessment down 5%+ YoY"
   ],
@@ -4506,6 +5892,17 @@
   "lat": 43.152178,
   "lon": -77.599399,
   "distanceToCbdMi": 0.65,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 388441,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 388441,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -4542,6 +5939,17 @@
   "lat": 43.176623,
   "lon": -77.678923,
   "distanceToCbdMi": 3.7,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 387445,
+  "estTaxCurrent": 387445,
+  "estTaxPrior": null,
   "flags": [
    "10+ acre site"
   ],
@@ -4578,6 +5986,17 @@
   "lat": 43.15485,
   "lon": -77.589519,
   "distanceToCbdMi": 1.1,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 385951,
+  "estTaxCurrent": 385951,
+  "estTaxPrior": 385951,
   "flags": [],
   "rank": 129
  },
@@ -4612,6 +6031,17 @@
   "lat": 43.105959,
   "lon": -77.45522,
   "distanceToCbdMi": 8.59,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 275003,
+  "estTaxCurrent": 275003,
+  "estTaxPrior": 252825,
   "flags": [],
   "rank": 130
  },
@@ -4646,6 +6076,17 @@
   "lat": 43.155284,
   "lon": -77.610667,
   "distanceToCbdMi": 0.04,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 378481,
+  "estTaxCurrent": 0,
+  "estTaxPrior": null,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -4682,6 +6123,17 @@
   "lat": 43.088363,
   "lon": -77.617711,
   "distanceToCbdMi": 4.66,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 250705,
+  "estTaxCurrent": 250204,
+  "estTaxPrior": 153251,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4718,6 +6170,17 @@
   "lat": 43.085409,
   "lon": -77.62368,
   "distanceToCbdMi": 4.89,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 249666,
+  "estTaxCurrent": 237682,
+  "estTaxPrior": 213164,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -4755,6 +6218,17 @@
   "lat": 43.130605,
   "lon": -77.497945,
   "distanceToCbdMi": 5.97,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 17.8872
+  },
+  "taxRateTotal": 26.6072,
+  "taxBasis": "Penfield / Penfield school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.661,
+  "estTaxFull": 299916,
+  "estTaxCurrent": 299916,
+  "estTaxPrior": 258547,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4791,6 +6265,17 @@
   "lat": 43.067427,
   "lon": -77.612457,
   "distanceToCbdMi": 6.1,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 248179,
+  "estTaxCurrent": 248179,
+  "estTaxPrior": 214521,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -4828,6 +6313,17 @@
   "lat": 43.203239,
   "lon": -77.632551,
   "distanceToCbdMi": 3.46,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 373139,
+  "estTaxCurrent": 373139,
+  "estTaxPrior": 373139,
   "flags": [
    "10+ acre site"
   ],
@@ -4864,6 +6360,17 @@
   "lat": 43.112855,
   "lon": -77.54905,
   "distanceToCbdMi": 4.31,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 328538,
+  "estTaxCurrent": 328538,
+  "estTaxPrior": 298213,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4900,6 +6407,17 @@
   "lat": 43.120652,
   "lon": -77.510294,
   "distanceToCbdMi": 5.64,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.0857
+  },
+  "taxRateTotal": 27.0957,
+  "taxBasis": "Pittsford / East Rochester school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.71,
+  "estTaxFull": 303157,
+  "estTaxCurrent": 98526,
+  "estTaxPrior": 261818,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -4936,6 +6454,17 @@
   "lat": 43.078011,
   "lon": -77.631498,
   "distanceToCbdMi": 5.46,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 245795,
+  "estTaxCurrent": 245795,
+  "estTaxPrior": 193958,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -4973,6 +6502,17 @@
   "lat": 43.124951,
   "lon": -77.516066,
   "distanceToCbdMi": 5.25,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 18.2211
+  },
+  "taxRateTotal": 26.9411,
+  "taxBasis": "Penfield / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.694,
+  "estTaxFull": 298381,
+  "estTaxCurrent": 134272,
+  "estTaxPrior": 257226,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5009,6 +6549,17 @@
   "lat": 43.182339,
   "lon": -77.692343,
   "distanceToCbdMi": 4.48,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 311563,
+  "estTaxCurrent": 311563,
+  "estTaxPrior": 279493,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5045,6 +6596,17 @@
   "lat": 43.127829,
   "lon": -77.442996,
   "distanceToCbdMi": 8.7,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 17.8872
+  },
+  "taxRateTotal": 26.6072,
+  "taxBasis": "Penfield / Penfield school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.661,
+  "estTaxFull": 293985,
+  "estTaxCurrent": 293985,
+  "estTaxPrior": 253436,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5081,6 +6643,17 @@
   "lat": 43.126943,
   "lon": -77.564212,
   "distanceToCbdMi": 3.09,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 323661,
+  "estTaxCurrent": 323661,
+  "estTaxPrior": 293785,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5117,6 +6690,17 @@
   "lat": 43.226057,
   "lon": -77.389407,
   "distanceToCbdMi": 12.19,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 272244,
+  "estTaxCurrent": 272244,
+  "estTaxPrior": 251302,
   "flags": [],
   "rank": 144
  },
@@ -5151,6 +6735,17 @@
   "lat": 43.059343,
   "lon": -77.469246,
   "distanceToCbdMi": 9.78,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 18.2205
+  },
+  "taxRateTotal": 26.7905,
+  "taxBasis": "Perinton / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.679,
+  "estTaxFull": 291405,
+  "estTaxCurrent": 291405,
+  "estTaxPrior": 285189,
   "flags": [],
   "rank": 145
  },
@@ -5185,6 +6780,17 @@
   "lat": 43.112394,
   "lon": -77.596028,
   "distanceToCbdMi": 3.09,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 318566,
+  "estTaxCurrent": 318566,
+  "estTaxPrior": 289160,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5221,6 +6827,17 @@
   "lat": 43.223301,
   "lon": -77.398841,
   "distanceToCbdMi": 11.68,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 268988,
+  "estTaxCurrent": 110823,
+  "estTaxPrior": 248297,
   "flags": [],
   "rank": 147
  },
@@ -5255,6 +6872,17 @@
   "lat": 43.05596,
   "lon": -77.467901,
   "distanceToCbdMi": 9.99,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 18.2205
+  },
+  "taxRateTotal": 26.7905,
+  "taxBasis": "Perinton / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.679,
+  "estTaxFull": 290371,
+  "estTaxCurrent": 290371,
+  "estTaxPrior": 266954,
   "flags": [],
   "rank": 148
  },
@@ -5289,6 +6917,17 @@
   "lat": 43.101512,
   "lon": -77.580211,
   "distanceToCbdMi": 4.06,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 317418,
+  "estTaxCurrent": 317418,
+  "estTaxPrior": 288118,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5325,6 +6964,17 @@
   "lat": 43.063169,
   "lon": -77.64331,
   "distanceToCbdMi": 6.59,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 237924,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 234068,
   "flags": [
    "10+ acre site"
   ],
@@ -5361,6 +7011,17 @@
   "lat": 43.181133,
   "lon": -77.686227,
   "distanceToCbdMi": 4.16,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 302044,
+  "estTaxCurrent": 302044,
+  "estTaxPrior": 270953,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5397,6 +7058,17 @@
   "lat": 43.109774,
   "lon": -77.571163,
   "distanceToCbdMi": 3.76,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 311200,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 282474,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5433,6 +7105,17 @@
   "lat": 43.083647,
   "lon": -77.587053,
   "distanceToCbdMi": 5.12,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 233077,
+  "estTaxCurrent": 233077,
+  "estTaxPrior": 317855,
   "flags": [
    "Assessment down 5%+ YoY"
   ],
@@ -5469,6 +7152,17 @@
   "lat": 43.207446,
   "lon": -77.602692,
   "distanceToCbdMi": 3.61,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.33,
+   "school": 19.6021
+  },
+  "taxRateTotal": 31.2621,
+  "taxBasis": "Irondequoit / West Irondequoit school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.126,
+  "estTaxFull": 330084,
+  "estTaxCurrent": 330084,
+  "estTaxPrior": 301383,
   "flags": [],
   "rank": 154
  },
@@ -5503,6 +7197,17 @@
   "lat": 43.110536,
   "lon": -77.592384,
   "distanceToCbdMi": 3.26,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 309318,
+  "estTaxCurrent": 309318,
+  "estTaxPrior": 280766,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5539,6 +7244,17 @@
   "lat": 43.125988,
   "lon": -77.518127,
   "distanceToCbdMi": 5.13,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.2299
+  },
+  "taxRateTotal": 29.4299,
+  "taxBasis": "Brighton / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.943,
+  "estTaxFull": 307901,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 279481,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5575,6 +7291,17 @@
   "lat": 43.104047,
   "lon": -77.74487,
   "distanceToCbdMi": 7.62,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 14.5678
+  },
+  "taxRateTotal": 23.7978,
+  "taxBasis": "Chili / Churchville-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.38,
+  "estTaxFull": 247017,
+  "estTaxCurrent": 247017,
+  "estTaxPrior": 242076,
   "flags": [],
   "rank": 157
  },
@@ -5609,6 +7336,17 @@
   "lat": 43.181946,
   "lon": -77.695543,
   "distanceToCbdMi": 4.62,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 291207,
+  "estTaxCurrent": 291207,
+  "estTaxPrior": 261229,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -5646,6 +7384,17 @@
   "lat": 43.088613,
   "lon": -77.601984,
   "distanceToCbdMi": 4.66,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 224875,
+  "estTaxCurrent": 224875,
+  "estTaxPrior": 207632,
   "flags": [
    "10+ acre site"
   ],
@@ -5682,6 +7431,17 @@
   "lat": 43.102963,
   "lon": -77.579812,
   "distanceToCbdMi": 3.97,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 298625,
+  "estTaxCurrent": 298625,
+  "estTaxPrior": 361352,
   "flags": [
    "Assessment down 5%+ YoY"
   ],
@@ -5718,6 +7478,17 @@
   "lat": 43.133426,
   "lon": -77.678701,
   "distanceToCbdMi": 3.73,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 309622,
+  "estTaxCurrent": 309622,
+  "estTaxPrior": 242490,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5754,6 +7525,17 @@
   "lat": 43.067706,
   "lon": -77.443658,
   "distanceToCbdMi": 10.41,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 240080,
+  "estTaxCurrent": 240080,
+  "estTaxPrior": 220717,
   "flags": [],
   "rank": 162
  },
@@ -5788,6 +7570,17 @@
   "lat": 43.155872,
   "lon": -77.593474,
   "distanceToCbdMi": 0.9,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 313740,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 313740,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -5824,6 +7617,17 @@
   "lat": 43.228253,
   "lon": -77.391702,
   "distanceToCbdMi": 12.15,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 3.62,
+   "school": 14.8653
+  },
+  "taxRateTotal": 24.8153,
+  "taxBasis": "Webster / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.482,
+  "estTaxFull": 231398,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 213598,
   "flags": [],
   "rank": 164
  },
@@ -5858,6 +7662,17 @@
   "lat": 43.167276,
   "lon": -77.692791,
   "distanceToCbdMi": 4.18,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 282286,
+  "estTaxCurrent": 280310,
+  "estTaxPrior": 244860,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5894,6 +7709,17 @@
   "lat": 43.12385,
   "lon": -77.620837,
   "distanceToCbdMi": 2.25,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 306124,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 306124,
   "flags": [],
   "rank": 166
  },
@@ -5928,6 +7754,17 @@
   "lat": 43.085614,
   "lon": -77.617043,
   "distanceToCbdMi": 4.85,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 202330,
+  "estTaxCurrent": 202330,
+  "estTaxPrior": 164266,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -5964,6 +7801,17 @@
   "lat": 43.191764,
   "lon": -77.58922,
   "distanceToCbdMi": 2.73,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 288840,
+  "estTaxCurrent": 31484,
+  "estTaxPrior": 288840,
   "flags": [],
   "rank": 168
  },
@@ -5998,6 +7846,17 @@
   "lat": 43.208355,
   "lon": -77.672234,
   "distanceToCbdMi": 4.76,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 244681,
+  "estTaxCurrent": 244681,
+  "estTaxPrior": 219493,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6034,6 +7893,17 @@
   "lat": 43.158552,
   "lon": -77.582993,
   "distanceToCbdMi": 1.44,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 287210,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 287210,
   "flags": [
    "10+ acre site"
   ],
@@ -6070,6 +7940,17 @@
   "lat": 43.208512,
   "lon": -77.703436,
   "distanceToCbdMi": 5.91,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 238863,
+  "estTaxCurrent": 238863,
+  "estTaxPrior": 214274,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6106,6 +7987,17 @@
   "lat": 43.102151,
   "lon": -77.535192,
   "distanceToCbdMi": 5.33,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.2277
+  },
+  "taxRateTotal": 27.2377,
+  "taxBasis": "Pittsford / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.724,
+  "estTaxFull": 231019,
+  "estTaxCurrent": 231019,
+  "estTaxPrior": 199516,
   "flags": [
    "Land-heavy (redevelopment angle)",
    "Assessment up 10%+ YoY"
@@ -6143,6 +8035,17 @@
   "lat": null,
   "lon": null,
   "distanceToCbdMi": null,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 18.1477
+  },
+  "taxRateTotal": 29.3477,
+  "taxBasis": "Brighton / Brighton school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.935,
+  "estTaxFull": 248231,
+  "estTaxCurrent": 248231,
+  "estTaxPrior": 225317,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6179,6 +8082,17 @@
   "lat": 43.094365,
   "lon": -77.59126,
   "distanceToCbdMi": 4.35,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 185305,
+  "estTaxCurrent": 185305,
+  "estTaxPrior": 125476,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -6216,6 +8130,17 @@
   "lat": 43.084321,
   "lon": -77.597411,
   "distanceToCbdMi": 4.98,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 185179,
+  "estTaxCurrent": 185179,
+  "estTaxPrior": 210721,
   "flags": [
    "Assessment down 5%+ YoY",
    "10+ acre site"
@@ -6253,6 +8178,17 @@
   "lat": 43.106955,
   "lon": -77.616816,
   "distanceToCbdMi": 3.38,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 14.327
+  },
+  "taxRateTotal": 25.527,
+  "taxBasis": "Brighton / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.553,
+  "estTaxFull": 213411,
+  "estTaxCurrent": 213411,
+  "estTaxPrior": 193712,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6289,6 +8225,17 @@
   "lat": 43.070709,
   "lon": -77.443513,
   "distanceToCbdMi": 10.3,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.24,
+   "school": 15.4717
+  },
+  "taxRateTotal": 24.0417,
+  "taxBasis": "Perinton / Fairport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.404,
+  "estTaxFull": 200748,
+  "estTaxCurrent": 200748,
+  "estTaxPrior": 184559,
   "flags": [],
   "rank": 177
  },
@@ -6323,6 +8270,17 @@
   "lat": 43.115801,
   "lon": -77.492282,
   "distanceToCbdMi": 6.6,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 0.0,
+   "school": 18.0855
+  },
+  "taxRateTotal": 24.4155,
+  "taxBasis": "East Rochester / East Rochester school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.442,
+  "estTaxFull": 201216,
+  "estTaxCurrent": 201216,
+  "estTaxPrior": 179208,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6359,6 +8317,17 @@
   "lat": 43.083121,
   "lon": -77.695504,
   "distanceToCbdMi": 6.57,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 14.5767
+  },
+  "taxRateTotal": 23.8067,
+  "taxBasis": "Chili / Wheatland-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.381,
+  "estTaxFull": 195029,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 207923,
   "flags": [
    "Assessment down 5%+ YoY"
   ],
@@ -6395,6 +8364,17 @@
   "lat": 43.158999,
   "lon": -77.763293,
   "distanceToCbdMi": 7.66,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.17,
+   "school": 16.0296
+  },
+  "taxRateTotal": 26.5296,
+  "taxBasis": "Ogden / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.653,
+  "estTaxFull": 217060,
+  "estTaxCurrent": 217060,
+  "estTaxPrior": 214890,
   "flags": [],
   "rank": 180
  },
@@ -6429,6 +8409,17 @@
   "lat": 43.069022,
   "lon": -77.66472,
   "distanceToCbdMi": 6.56,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 175682,
+  "estTaxCurrent": 175682,
+  "estTaxPrior": 135022,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -6466,6 +8457,17 @@
   "lat": 43.156447,
   "lon": -77.60765,
   "distanceToCbdMi": 0.19,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 263940,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 263940,
   "flags": [],
   "rank": 182
  },
@@ -6500,6 +8502,17 @@
   "lat": 43.132081,
   "lon": -77.440163,
   "distanceToCbdMi": 8.78,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 17.8872
+  },
+  "taxRateTotal": 26.6072,
+  "taxBasis": "Penfield / Penfield school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.661,
+  "estTaxFull": 211357,
+  "estTaxCurrent": 211357,
+  "estTaxPrior": 182203,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6536,6 +8549,17 @@
   "lat": 43.146171,
   "lon": -77.555842,
   "distanceToCbdMi": 2.87,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 262944,
+  "estTaxCurrent": 262944,
+  "estTaxPrior": 262944,
   "flags": [],
   "rank": 184
  },
@@ -6570,6 +8594,17 @@
   "lat": 43.0728,
   "lon": -77.628461,
   "distanceToCbdMi": 5.79,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 172882,
+  "estTaxCurrent": 172882,
+  "estTaxPrior": 129307,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6606,6 +8641,17 @@
   "lat": 43.090323,
   "lon": -77.583912,
   "distanceToCbdMi": 4.72,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 171834,
+  "estTaxCurrent": 171834,
+  "estTaxPrior": 153251,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -6643,6 +8689,17 @@
   "lat": 43.204558,
   "lon": -77.674354,
   "distanceToCbdMi": 4.64,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 212484,
+  "estTaxCurrent": 212484,
+  "estTaxPrior": 190612,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6679,6 +8736,17 @@
   "lat": 43.089872,
   "lon": -77.620005,
   "distanceToCbdMi": 4.57,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 165518,
+  "estTaxCurrent": 165518,
+  "estTaxPrior": 144871,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6715,6 +8783,17 @@
   "lat": 43.156914,
   "lon": -77.612639,
   "distanceToCbdMi": 0.11,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 249000,
+  "estTaxCurrent": 249000,
+  "estTaxPrior": 249000,
   "flags": [],
   "rank": 189
  },
@@ -6749,6 +8828,17 @@
   "lat": 43.22266,
   "lon": -77.661175,
   "distanceToCbdMi": 5.27,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.74,
+   "school": 17.0766
+  },
+  "taxRateTotal": 28.1466,
+  "taxBasis": "Greece / Greece school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.815,
+  "estTaxFull": 207708,
+  "estTaxCurrent": 207708,
+  "estTaxPrior": 186328,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6785,6 +8875,17 @@
   "lat": 43.08776,
   "lon": -77.598442,
   "distanceToCbdMi": 4.74,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 160819,
+  "estTaxCurrent": 160819,
+  "estTaxPrior": 90693,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -6821,6 +8922,17 @@
   "lat": 43.156383,
   "lon": -77.614371,
   "distanceToCbdMi": 0.16,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 232334,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 232334,
   "flags": [],
   "rank": 192
  },
@@ -6855,6 +8967,17 @@
   "lat": 43.158511,
   "lon": -77.756591,
   "distanceToCbdMi": 7.32,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.17,
+   "school": 16.0296
+  },
+  "taxRateTotal": 26.5296,
+  "taxBasis": "Ogden / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.653,
+  "estTaxFull": 182224,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 180402,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -6891,6 +9014,17 @@
   "lat": 43.189509,
   "lon": -77.657266,
   "distanceToCbdMi": 3.29,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 225823,
+  "estTaxCurrent": 225823,
+  "estTaxPrior": 225823,
   "flags": [],
   "rank": 194
  },
@@ -6925,6 +9059,17 @@
   "lat": 43.152525,
   "lon": -77.728696,
   "distanceToCbdMi": 5.92,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 204371,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 216458,
   "flags": [
    "Assessment down 5%+ YoY",
    "IDA PILOT structure"
@@ -6962,6 +9107,17 @@
   "lat": 43.156308,
   "lon": -77.61357,
   "distanceToCbdMi": 0.12,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 220780,
+  "estTaxCurrent": 30247,
+  "estTaxPrior": null,
   "flags": [],
   "rank": 196
  },
@@ -6996,6 +9152,17 @@
   "lat": 43.069367,
   "lon": -77.929254,
   "distanceToCbdMi": 17.11,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.15,
+   "school": 16.6159
+  },
+  "taxRateTotal": 24.0959,
+  "taxBasis": "Riga / Byron-Bergen school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.41,
+  "estTaxFull": 158698,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 170141,
   "flags": [
    "Assessment down 5%+ YoY",
    "IDA PILOT structure"
@@ -7033,6 +9200,17 @@
   "lat": 43.157849,
   "lon": -77.612174,
   "distanceToCbdMi": 0.16,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 218290,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 218290,
   "flags": [],
   "rank": 198
  },
@@ -7067,6 +9245,17 @@
   "lat": 43.138695,
   "lon": -77.760623,
   "distanceToCbdMi": 7.62,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.17,
+   "school": 14.5678
+  },
+  "taxRateTotal": 25.0678,
+  "taxBasis": "Ogden / Churchville-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.507,
+  "estTaxFull": 164232,
+  "estTaxCurrent": 164232,
+  "estTaxPrior": 161688,
   "flags": [],
   "rank": 199
  },
@@ -7101,6 +9290,17 @@
   "lat": 43.158686,
   "lon": -77.606434,
   "distanceToCbdMi": 0.32,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 217454,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 217454,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -7137,6 +9337,17 @@
   "lat": 43.080448,
   "lon": -77.622664,
   "distanceToCbdMi": 5.23,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 144226,
+  "estTaxCurrent": 144226,
+  "estTaxPrior": 124518,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -7174,6 +9385,17 @@
   "lat": 43.159834,
   "lon": -77.616547,
   "distanceToCbdMi": 0.39,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 216929,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 216929,
   "flags": [],
   "rank": 202
  },
@@ -7208,6 +9430,17 @@
   "lat": 43.113294,
   "lon": -77.66653,
   "distanceToCbdMi": 4.04,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.9,
+   "school": 14.5767
+  },
+  "taxRateTotal": 23.8067,
+  "taxBasis": "Chili / Wheatland-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.381,
+  "estTaxFull": 150594,
+  "estTaxCurrent": 150594,
+  "estTaxPrior": 147583,
   "flags": [],
   "rank": 203
  },
@@ -7242,6 +9475,17 @@
   "lat": 43.157959,
   "lon": -77.605812,
   "distanceToCbdMi": 0.32,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 207168,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 207168,
   "flags": [],
   "rank": 204
  },
@@ -7276,6 +9520,17 @@
   "lat": 43.078703,
   "lon": -77.627258,
   "distanceToCbdMi": 5.38,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 136586,
+  "estTaxCurrent": 136586,
+  "estTaxPrior": 73466,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -7312,6 +9567,17 @@
   "lat": 43.139903,
   "lon": -77.710075,
   "distanceToCbdMi": 5.1,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 184803,
+  "estTaxCurrent": 184803,
+  "estTaxPrior": 156187,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -7348,6 +9614,17 @@
   "lat": 43.093153,
   "lon": -77.613069,
   "distanceToCbdMi": 4.32,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 128543,
+  "estTaxCurrent": 128543,
+  "estTaxPrior": 57469,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -7384,6 +9661,17 @@
   "lat": 43.084816,
   "lon": -77.616839,
   "distanceToCbdMi": 4.9,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 1.37,
+   "school": 14.33
+  },
+  "taxRateTotal": 22.03,
+  "taxBasis": "Henrietta / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.203,
+  "estTaxFull": 124286,
+  "estTaxCurrent": 124286,
+  "estTaxPrior": 116135,
   "flags": [
    "10+ acre site"
   ],
@@ -7420,6 +9708,17 @@
   "lat": 43.134853,
   "lon": -77.662608,
   "distanceToCbdMi": 2.96,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 5.3,
+   "school": 18.9164
+  },
+  "taxRateTotal": 30.5464,
+  "taxBasis": "Gates / Gates-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 3.055,
+  "estTaxFull": 158841,
+  "estTaxCurrent": 106900,
+  "estTaxPrior": null,
   "flags": [],
   "rank": 209
  },
@@ -7454,6 +9753,17 @@
   "lat": 43.093721,
   "lon": -77.677713,
   "distanceToCbdMi": 5.43,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 14.5767
+  },
+  "taxRateTotal": 25.7767,
+  "taxBasis": "Brighton / Wheatland-Chili school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.578,
+  "estTaxFull": 131479,
+  "estTaxCurrent": 131479,
+  "estTaxPrior": 119341,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -7490,6 +9800,17 @@
   "lat": 43.188494,
   "lon": -77.499226,
   "distanceToCbdMi": 6.09,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.39,
+   "school": 14.8653
+  },
+  "taxRateTotal": 23.5853,
+  "taxBasis": "Penfield / Webster school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.359,
+  "estTaxFull": 117924,
+  "estTaxCurrent": 117924,
+  "estTaxPrior": 101657,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -7526,6 +9847,17 @@
   "lat": 43.097249,
   "lon": -77.627044,
   "distanceToCbdMi": 4.11,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.87,
+   "school": 14.327
+  },
+  "taxRateTotal": 25.527,
+  "taxBasis": "Brighton / Rush-Henrietta school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.553,
+  "estTaxFull": 122050,
+  "estTaxCurrent": 122050,
+  "estTaxPrior": 110782,
   "flags": [
    "Assessment up 10%+ YoY",
    "10+ acre site"
@@ -7563,6 +9895,17 @@
   "lat": 43.159956,
   "lon": -77.610499,
   "distanceToCbdMi": 0.3,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 146970,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 146970,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -7599,6 +9942,17 @@
   "lat": 43.158894,
   "lon": -77.760183,
   "distanceToCbdMi": 7.51,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.17,
+   "school": 16.0296
+  },
+  "taxRateTotal": 26.5296,
+  "taxBasis": "Ogden / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.653,
+  "estTaxFull": 113889,
+  "estTaxCurrent": 113889,
+  "estTaxPrior": 112751,
   "flags": [],
   "rank": 214
  },
@@ -7633,6 +9987,17 @@
   "lat": 43.160301,
   "lon": -77.761214,
   "distanceToCbdMi": 7.56,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 4.17,
+   "school": 16.0296
+  },
+  "taxRateTotal": 26.5296,
+  "taxBasis": "Ogden / Spencerport school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.653,
+  "estTaxFull": 112549,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 111424,
   "flags": [
    "IDA PILOT structure"
   ],
@@ -7669,6 +10034,17 @@
   "lat": 43.091403,
   "lon": -77.511977,
   "distanceToCbdMi": 6.69,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.2277
+  },
+  "taxRateTotal": 27.2377,
+  "taxBasis": "Pittsford / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.724,
+  "estTaxFull": 112486,
+  "estTaxCurrent": 112486,
+  "estTaxPrior": 97149,
   "flags": [
    "Assessment up 10%+ YoY"
   ],
@@ -7705,6 +10081,17 @@
   "lat": 43.156893,
   "lon": -77.597318,
   "distanceToCbdMi": 0.71,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 133856,
+  "estTaxCurrent": 0,
+  "estTaxPrior": 133856,
   "flags": [],
   "rank": 217
  },
@@ -7739,6 +10126,17 @@
   "lat": 43.158845,
   "lon": -77.607695,
   "distanceToCbdMi": 0.29,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 116200,
+  "estTaxCurrent": 116200,
+  "estTaxPrior": 116200,
   "flags": [],
   "rank": 218
  },
@@ -7773,6 +10171,17 @@
   "lat": 43.152379,
   "lon": -77.606778,
   "distanceToCbdMi": 0.32,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 97940,
+  "estTaxCurrent": 35552,
+  "estTaxPrior": 97940,
   "flags": [],
   "rank": 219
  },
@@ -7807,6 +10216,17 @@
   "lat": 43.157771,
   "lon": -77.614994,
   "distanceToCbdMi": 0.24,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 60597,
+  "estTaxCurrent": 22542,
+  "estTaxPrior": 60597,
   "flags": [],
   "rank": 220
  },
@@ -7841,6 +10261,17 @@
   "lat": 43.155662,
   "lon": -77.607359,
   "distanceToCbdMi": 0.2,
+  "taxRates": {
+   "county": 8.45,
+   "municipal": 9.04,
+   "school": 15.71
+  },
+  "taxRateTotal": 33.2,
+  "taxBasis": "City of Rochester non-homestead rates on assessed value, 2024-25",
+  "effectiveTaxRate": 3.32,
+  "estTaxFull": 52788,
+  "estTaxCurrent": 20059,
+  "estTaxPrior": 52788,
   "flags": [],
   "rank": 221
  },
@@ -7875,6 +10306,17 @@
   "lat": 43.092232,
   "lon": -77.512898,
   "distanceToCbdMi": 6.62,
+  "taxRates": {
+   "county": 6.33,
+   "municipal": 2.68,
+   "school": 18.2277
+  },
+  "taxRateTotal": 27.2377,
+  "taxBasis": "Pittsford / Pittsford school district full-value rates, FY2025",
+  "effectiveTaxRate": 2.724,
+  "estTaxFull": 41314,
+  "estTaxCurrent": 41314,
+  "estTaxPrior": 35681,
   "flags": [
    "Assessment up 10%+ YoY"
   ],

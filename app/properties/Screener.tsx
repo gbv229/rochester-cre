@@ -7,7 +7,7 @@ import Thumb from "../../components/Thumb";
 import { properties, CATEGORIES, CATEGORY_COLOR, SUBMARKET_ORDER, usdShort, usd, signedPct, pct, num, median, type Property } from "../../lib/data";
 import { assumptionsFor } from "../../lib/assumptions";
 
-type SortKey = "marketValue" | "yoyPct" | "improvementRatio" | "lotAcres" | "valuePerAcre" | "distanceToCbdMi" | "address" | "impliedNoi" | "taxablePct";
+type SortKey = "marketValue" | "yoyPct" | "improvementRatio" | "lotAcres" | "valuePerAcre" | "distanceToCbdMi" | "address" | "impliedNoi" | "taxablePct" | "estTaxFull";
 const MUNIS = [...new Set(properties.map((p) => p.municipality))].sort();
 const TAX = ["Fully taxable", "Partially exempt", "Fully exempt / PILOT"];
 const OWNERS = [...new Set(properties.map((p) => p.ownerType))].sort();
@@ -66,7 +66,7 @@ export default function Screener() {
   const reset = () => { setQ(""); setCat(""); setSubtype(""); setSub(""); setMuni(""); setTax(""); setOwner(""); setFlag(""); setMinV(""); setMaxV(""); setMinYoy(""); setMaxDist(""); };
 
   const exportCsv = () => {
-    const cols: (keyof Property)[] = ["printKey", "address", "municipality", "submarket", "category", "subtype", "owner", "ownerType", "marketValue", "marketValue2024", "yoyPct", "landValue", "improvementValue", "improvementRatio", "countyTaxable", "taxablePct", "taxStatus", "lotAcres", "valuePerAcre", "distanceToCbdMi", "lat", "lon"];
+    const cols: (keyof Property)[] = ["printKey", "address", "municipality", "submarket", "category", "subtype", "owner", "ownerType", "marketValue", "marketValue2024", "yoyPct", "landValue", "improvementValue", "improvementRatio", "countyTaxable", "taxablePct", "taxStatus", "taxRateTotal", "estTaxFull", "estTaxCurrent", "lotAcres", "valuePerAcre", "distanceToCbdMi", "lat", "lon"];
     const esc = (v: unknown) => (v == null ? "" : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
     const csv = [cols.join(","), ...rows.map((p) => cols.map((c) => esc(p[c])).join(","))].join("\n");
     const a = document.createElement("a");
@@ -151,6 +151,7 @@ export default function Screener() {
                 {th("lotAcres", "Lot ac")}
                 {th("valuePerAcre", "Value / ac")}
                 {th("impliedNoi", "Implied NOI")}
+                {th("estTaxFull", "Est. tax")}
                 {th("taxablePct", "Taxable")}
                 {th("distanceToCbdMi", "Mi to CBD")}
                 <th>Owner of record</th>
@@ -168,6 +169,7 @@ export default function Screener() {
                   <td className="n">{num(p.lotAcres, 1)}</td>
                   <td className="n">{usdShort(p.valuePerAcre)}</td>
                   <td className="n">{usdShort(impliedNoi(p))}</td>
+                  <td className="n">{usdShort(p.estTaxFull)}</td>
                   <td className="n">{pct(p.taxablePct, 0)}</td>
                   <td className="n">{num(p.distanceToCbdMi, 1)}</td>
                   <td className="muted">{p.owner}</td>

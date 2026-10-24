@@ -192,3 +192,7 @@ fieldset { min-width: 0; }
 .analyst-input input { flex: 1; min-width: 0; padding: 9px 11px; border: 1px solid var(--rule-strong); border-radius: var(--radius-s); background: var(--panel); }
 .btn:disabled { opacity: 0.5; cursor: default; }
 .thesis li { margin-bottom: 6px; }
+.footer-links { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.footer-links a { color: var(--ink-2); }
+.memo p { max-width: 78ch; }
+.memo .section h2 { margin-top: 0; }

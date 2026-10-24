@@ -10,12 +10,12 @@ export const dynamic = "force-static";
  */
 export function GET() {
   const cols = ["id", "address", "municipality", "submarket", "subtype", "owner", "marketValue", "marketValue2024", "yoyPct",
-    "landValue", "improvementRatio", "taxStatus", "taxablePct", "lotAcres", "distanceToCbdMi", "capRate", "impliedNoi", "flags"];
+    "landValue", "improvementRatio", "taxStatus", "taxablePct", "lotAcres", "distanceToCbdMi", "capRate", "impliedNoi", "taxRatePer1000", "estTaxFullAssessment", "estTaxTaxableShare", "flags"];
   const rows = properties.map((p) => {
     const a = assumptionsFor(p.classCode, p.submarket);
     return [p.id, p.address, p.municipality, p.submarket, p.subtype, p.owner, p.marketValue, p.marketValue2024 ?? "", p.yoyPct ?? "",
       p.landValue, p.improvementRatio ?? "", p.taxStatus, p.taxablePct ?? "", p.lotAcres ?? "", p.distanceToCbdMi ?? "",
-      a.capRate, Math.round(p.marketValue * a.capRate / 100), p.flags.join("; ")].join("|");
+      a.capRate, Math.round(p.marketValue * a.capRate / 100), p.taxRateTotal, p.estTaxFull, p.estTaxCurrent ?? "", p.flags.join("; ")].join("|");
   });
   const economy = Object.fromEntries(Object.entries(SERIES).map(([k, s]) => [k, { title: s.title, units: s.units, latest: last(s.data), series: s.data }]));
   return Response.json({

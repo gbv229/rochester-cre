@@ -31,6 +31,13 @@ export type Property = {
   lat: number | null;
   lon: number | null;
   distanceToCbdMi: number | null;
+  taxRates: { county: number; municipal: number; school: number };
+  taxRateTotal: number;
+  taxBasis: string;
+  effectiveTaxRate: number;
+  estTaxFull: number;
+  estTaxCurrent: number | null;
+  estTaxPrior: number | null;
   flags: string[];
   rank: number;
 };

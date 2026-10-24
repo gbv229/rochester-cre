@@ -1,0 +1,40 @@
+# NYS OSC / ORPTS "Real Property Tax Rates Levy Data By Municipality" (data.ny.gov iq85-sdzs),
+# Monroe County, roll year 2024 / fiscal year ending 2025. Full-value rates per $1,000.
+# municipality|school_district|county|municipal|school
+Brighton|Wheatland-Chili|6.33|4.87|14.5767237
+Brighton|Rush-Henrietta|6.33|4.87|14.32699779
+Brighton|Pittsford|6.33|4.87|18.22986424
+Brighton|Penfield|6.33|4.87|17.88439596
+Brighton|Brighton|6.33|4.87|18.14766297
+Chili|Wheatland-Chili|6.33|2.90|14.57671688
+Chili|Churchville-Chili|6.33|2.90|14.56784952
+Chili|Gates-Chili|6.33|2.90|18.91644158
+Gates|Spencerport|6.33|5.30|16.02814124
+Gates|Gates-Chili|6.33|5.30|18.91644213
+Greece|Hilton|6.33|4.74|14.28764357
+Greece|Greece|6.33|4.74|17.07659234
+Greece|Spencerport|6.33|4.74|16.0078024
+Henrietta|Rush-Henrietta|6.33|1.37|14.32996418
+Irondequoit|East Irondequoit|6.33|5.33|20.27939706
+Irondequoit|West Irondequoit|6.33|5.33|19.6021378
+Ogden|Churchville-Chili|6.33|4.17|14.56784952
+Ogden|Brockport|6.33|4.17|17.0629117
+Ogden|Spencerport|6.33|4.17|16.02963904
+Penfield|Webster|6.33|2.39|14.86526177
+Penfield|Pittsford|6.33|2.39|18.22114619
+Penfield|Penfield|6.33|2.39|17.88716556
+Perinton|Victor|6.33|2.24|12.44619633
+Perinton|East Rochester|6.33|2.24|18.08553044
+Perinton|Fairport|6.33|2.24|15.47170642
+Perinton|Pittsford|6.33|2.24|18.22045977
+Perinton|Penfield|6.33|2.24|17.88822629
+Pittsford|Rush-Henrietta|6.33|2.68|14.32687151
+Pittsford|Penfield|6.33|2.68|17.87836366
+Pittsford|Pittsford|6.33|2.68|18.22766935
+Pittsford|East Rochester|6.33|2.68|18.0856913
+Pittsford|Brighton|6.33|2.68|18.14749957
+Riga|Byron-Bergen|6.33|1.15|16.61591018
+Riga|Churchville-Chili|6.33|1.15|14.56784951
+Sweden|Brockport|6.33|3.00|17.07621808
+Webster|Webster|6.33|3.62|14.86528988
+East Rochester|East Rochester|6.33|0.00|18.08553344

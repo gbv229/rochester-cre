@@ -98,6 +98,21 @@ def slug(print_key: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", print_key.lower()).strip("-")
 
 
+# City of Rochester 2024-25 NON-HOMESTEAD rates per $1,000 of assessed value (cityofrochester.gov/tax-rates).
+# Commercial parcels in the city pay these, not the blended full-value rate. County combined includes Pure Waters.
+CITY_NONHOMESTEAD = {"county": 8.450048, "municipal": 9.040, "school": 15.710}
+
+
+def load_tax_rates() -> dict[tuple[str, str], dict[str, float]]:
+    out = {}
+    for line in (RAW / "tax_rates_fy2025.psv").read_text().splitlines():
+        if not line.strip() or line.startswith("#"):
+            continue
+        muni, school, c, m, sch = line.split("|")
+        out[(muni, school)] = {"county": float(c), "municipal": float(m), "school": float(sch)}
+    return out
+
+
 def load_2024() -> dict[str, float]:
     out = {}
     for line in (RAW / "fmv_2024.psv").read_text().splitlines():
@@ -119,6 +134,7 @@ def load_office_taxable() -> dict[str, float]:
 def main() -> None:
     prior = load_2024()
     office_tax = load_office_taxable()
+    rates = load_tax_rates()
     seen: set[str] = set()
     props = []
 
@@ -178,6 +194,21 @@ def main() -> None:
             submarket = SUBMARKETS.get(muni, "Other")
         dist = round(haversine_mi((lat, lon), FOUR_CORNERS), 2) if lat else None
 
+        # Estimated property tax if the parcel were fully taxable.
+        if muni == "Rochester":
+            r = CITY_NONHOMESTEAD
+            tax_base, tax_basis = tot_v, "City of Rochester non-homestead rates on assessed value, 2024-25"
+        else:
+            r = rates.get((muni, school))
+            tax_base, tax_basis = fmv_v, f"{muni} / {school} school district full-value rates, FY2025"
+        if r is None:
+            raise SystemExit(f"no tax rate for {muni} / {school}")
+        rate_total = r["county"] + r["municipal"] + r["school"]
+        est_tax_full = tax_base * rate_total / 1000
+        est_tax_current = est_tax_full * (taxable_pct / 100) if taxable_pct is not None else None
+        eff_rate = est_tax_full / fmv_v * 100
+        tax_prior = (p24 * eff_rate / 100) if p24 else None
+
         impr_ratio = round(impr_fmv / fmv_v * 100, 1) if fmv_v else None
         flags = []
         if impr_ratio is not None and impr_ratio < 60:
@@ -222,6 +253,13 @@ def main() -> None:
             "lat": round(lat, 6) if lat else None,
             "lon": round(lon, 6) if lon else None,
             "distanceToCbdMi": dist,
+            "taxRates": {k: round(v, 4) for k, v in r.items()},
+            "taxRateTotal": round(rate_total, 4),
+            "taxBasis": tax_basis,
+            "effectiveTaxRate": round(eff_rate, 3),
+            "estTaxFull": round(est_tax_full),
+            "estTaxCurrent": round(est_tax_current) if est_tax_current is not None else None,
+            "estTaxPrior": round(tax_prior) if tax_prior else None,
             "flags": flags,
         })
 
@@ -232,12 +270,12 @@ def main() -> None:
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "properties.json").write_text(json.dumps(props, indent=1))
     (ROOT / "public" / "data").mkdir(parents=True, exist_ok=True)
-    cols = [k for k in props[0] if k != "flags"] + ["flags"]
+    cols = [k for k in props[0] if k not in ("flags", "taxRates")] + ["flags"]
     with open(ROOT / "public" / "data" / "properties.csv", "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=cols)
         w.writeheader()
         for p in props:
-            w.writerow({**p, "flags": "; ".join(p["flags"])})
+            w.writerow({**{k: v for k, v in p.items() if k != "taxRates"}, "flags": "; ".join(p["flags"])})
 
     missing = [p["printKey"] for p in props if p["lat"] is None]
     total = sum(p["marketValue"] for p in props)

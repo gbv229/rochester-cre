@@ -78,7 +78,7 @@ export default function Market() {
     const counts = new Map<string, number>();
     list.forEach((p) => counts.set(p.category, (counts.get(p.category) || 0) + p.marketValue));
     const lead = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
-    return { name, n: list.length, value, exemptPct: (exempt / value) * 100, medYoy: median(list.filter((p) => p.yoyPct != null).map((p) => p.yoyPct!)), lead };
+    return { name, n: list.length, value, exemptPct: (exempt / value) * 100, taxRate: median(list.map((p) => p.taxRateTotal)) ?? 0, medYoy: median(list.filter((p) => p.yoyPct != null).map((p) => p.yoyPct!)), lead };
   }).sort((a, b) => b.value - a.value);
 
   // Assessment change distribution
@@ -252,10 +252,10 @@ export default function Market() {
 
       <section className="section">
         <h2>By municipality</h2>
-        <p className="muted small">The City of Rochester held most commercial values flat on the 2025 roll, so its 0% median reflects the assessor's revaluation cycle, not the market. Town figures reflect active reassessment.</p>
+        <p className="muted small">The City of Rochester held most commercial values flat on the 2025 roll, so its 0% median reflects the assessor's revaluation cycle, not the market. Town figures reflect active reassessment. Tax rates are the median combined county, municipal and school rate for tracked parcels; the city figure is its higher non-homestead (commercial) rate.</p>
         <div className="panel tight tablewrap">
           <table>
-            <thead><tr><th>Municipality</th><th className="n">Parcels</th><th className="n">Market value</th><th className="n">Median YoY</th><th className="n">Not fully taxable</th><th>Largest asset class</th></tr></thead>
+            <thead><tr><th>Municipality</th><th className="n">Parcels</th><th className="n">Market value</th><th className="n">Median YoY</th><th className="n">Not fully taxable</th><th className="n">Tax rate / $1,000</th><th>Largest asset class</th></tr></thead>
             <tbody>
               {munis.map((mu) => (
                 <tr key={mu.name}>
@@ -264,6 +264,7 @@ export default function Market() {
                   <td className="n">{usdShort(mu.value)}</td>
                   <td className={`n ${mu.medYoy == null ? "" : mu.medYoy >= 0 ? "up" : "down"}`}>{signedPct(mu.medYoy)}</td>
                   <td className="n">{pct(mu.exemptPct, 0)}</td>
+                  <td className="n">${mu.taxRate.toFixed(2)}</td>
                   <td><i className="dot" style={{ background: CATEGORY_COLOR[mu.lead], marginRight: 8 }} />{mu.lead}</td>
                 </tr>
               ))}

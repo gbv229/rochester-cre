@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "exceljs": "^4.4.0",
     "leaflet": "1.9",
     "next": "^15.5.28",
     "react": "^19.3.1",
