@@ -64,7 +64,8 @@ export default {
     const payload = JSON.stringify({
       systemInstruction: { parts: [{ text: system }] },
       contents,
-      generationConfig: { temperature: 0.3, maxOutputTokens: 1400 },
+      // Gemini 3.x models spend part of the output budget on internal reasoning, so the cap is generous.
+      generationConfig: { temperature: 0.3, maxOutputTokens: 8192 },
     });
 
     let lastError = "The AI service didn't respond. Try again in a moment.";
@@ -78,8 +79,13 @@ export default {
         });
         const data = await res.json().catch(() => ({}));
         if (res.ok) {
-          const text = (data.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("").trim();
-          if (text) return reply({ answer: text, model });
+          const cand = data.candidates?.[0];
+          const text = (cand?.content?.parts || []).filter((p) => !p.thought).map((p) => p.text || "").join("").trim();
+          if (text) {
+            const cut = cand?.finishReason === "MAX_TOKENS";
+            return reply({ answer: cut ? `${text}\n\n_(Answer cut off at the length limit. Ask for the rest, or narrow the question.)_` : text, model, truncated: cut });
+          }
+          if (cand?.finishReason === "MAX_TOKENS") { lastError = "The answer ran too long. Narrow the question."; break; }
           lastError = "The model returned an empty answer. Try rephrasing the question.";
           break;
         }

@@ -4,24 +4,57 @@ import { ANALYST_URL } from "../lib/config";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
-/** Minimal, safe markdown: paragraphs, bullet and numbered lists, **bold**. No HTML is ever injected. */
-function Rich({ text }: { text: string }) {
-  const blocks = text.split(/\n{2,}/);
-  const inline = (s: string) =>
-    s.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
-      part.startsWith("**") && part.endsWith("**") ? <strong key={i}>{part.slice(2, -2)}</strong> : <Fragment key={i}>{part.replace(/^#+\s*/, "")}</Fragment>);
-  return (
-    <>
-      {blocks.map((b, i) => {
-        const lines = b.split("\n").filter(Boolean);
-        if (lines.length && lines.every((l) => /^\s*[-*•]\s+/.test(l)))
-          return <ul key={i}>{lines.map((l, j) => <li key={j}>{inline(l.replace(/^\s*[-*•]\s+/, ""))}</li>)}</ul>;
-        if (lines.length && lines.every((l) => /^\s*\d+[.)]\s+/.test(l)))
-          return <ol key={i}>{lines.map((l, j) => <li key={j}>{inline(l.replace(/^\s*\d+[.)]\s+/, ""))}</li>)}</ol>;
-        return <p key={i}>{lines.map((l, j) => <Fragment key={j}>{j > 0 && <br />}{inline(l)}</Fragment>)}</p>;
-      })}
-    </>
-  );
+/**
+ * Safe markdown subset for model answers: headings, paragraphs, numbered and bulleted
+ * lists (with one level of nesting), **bold** and _italic_. Text only; no HTML is injected.
+ */
+function inline(s: string) {
+  return s.split(/(\*\*[^*]+\*\*|(?<![\w*])[_*][^_*\n]+[_*](?![\w*]))/g).map((part, i) => {
+    if (/^\*\*[^*]+\*\*$/.test(part)) return <strong key={i}>{part.slice(2, -2)}</strong>;
+    if (/^[_*][^_*]+[_*]$/.test(part)) return <em key={i}>{part.slice(1, -1)}</em>;
+    return <Fragment key={i}>{part}</Fragment>;
+  });
+}
+
+type Item = { text: string; kids: string[] };
+export function Rich({ text }: { text: string }) {
+  const out: React.ReactNode[] = [];
+  const lines = text.replace(/\r/g, "").split("\n");
+  let para: string[] = [];
+  let list: { ordered: boolean; items: Item[] } | null = null;
+  const flushPara = () => { if (para.length) { out.push(<p key={out.length}>{para.map((l, j) => <Fragment key={j}>{j > 0 && <br />}{inline(l)}</Fragment>)}</p>); para = []; } };
+  const flushList = () => {
+    if (!list) return;
+    const L = list.ordered ? "ol" : "ul";
+    out.push(<L key={out.length}>{list.items.map((it, j) => (
+      <li key={j}>{inline(it.text)}{it.kids.length > 0 && <ul>{it.kids.map((k, m) => <li key={m}>{inline(k)}</li>)}</ul>}</li>
+    ))}</L>);
+    list = null;
+  };
+  for (const raw of lines) {
+    const line = raw.replace(/\s+$/, "");
+    const indent = (raw.match(/^\s*/)?.[0].length ?? 0);
+    const num = line.match(/^\s*\d+[.)]\s+(.*)$/);
+    const bul = line.match(/^\s*[-*•]\s+(.*)$/);
+    const head = line.match(/^\s*#{1,6}\s+(.*)$/);
+    if (!line.trim()) { flushPara(); continue; }
+    if (head) { flushPara(); flushList(); out.push(<h4 key={out.length} style={{ margin: "0.4rem 0" }}>{inline(head[1])}</h4>); continue; }
+    if (num || bul) {
+      flushPara();
+      const body = (num || bul)![1];
+      const nested = list && (indent >= 2 || (bul && list.ordered));
+      if (nested && list!.items.length) { list!.items[list!.items.length - 1].kids.push(body); continue; }
+      const ordered = !!num;
+      if (!list || list.ordered !== ordered) { flushList(); list = { ordered, items: [] }; }
+      list.items.push({ text: body, kids: [] });
+      continue;
+    }
+    if (list && indent >= 2 && list.items.length) { list.items[list.items.length - 1].text += " " + line.trim(); continue; }
+    flushList();
+    para.push(line);
+  }
+  flushPara(); flushList();
+  return <>{out}</>;
 }
 
 export default function Analyst({ propertyId, suggestions, compact }: { propertyId?: string; suggestions: string[]; compact?: boolean }) {
