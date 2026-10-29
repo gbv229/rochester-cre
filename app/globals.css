@@ -196,3 +196,12 @@ fieldset { min-width: 0; }
 .footer-links a { color: var(--ink-2); }
 .memo p { max-width: 78ch; }
 .memo .section h2 { margin-top: 0; }
+
+/* Scrollable tables: a panel that wraps a table must scroll, not clip (overrides .panel.tight's overflow: hidden). */
+.panel.tablewrap { overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+
+/* Screener: header row stays on top while scrolling down; Address column stays put while scrolling right. */
+.screener th { z-index: 2; }
+.screener th:first-child, .screener td:first-child { position: sticky; left: 0; background: var(--panel); box-shadow: 1px 0 0 var(--rule); }
+.screener th:first-child { z-index: 3; background: #f8faf9; }
+.screener tbody tr:hover td:first-child { background: var(--parcel-wash); }

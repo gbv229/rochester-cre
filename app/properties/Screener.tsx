@@ -138,8 +138,8 @@ export default function Screener() {
       )}
 
       {view === "table" && rows.length > 0 && (
-        <div className="panel tight tablewrap" style={{ maxHeight: "75vh" }}>
-          <table>
+        <div className="panel tight tablewrap" style={{ maxHeight: "75vh" }} tabIndex={0} role="region" aria-label="Property results table">
+          <table className="screener">
             <thead>
               <tr>
                 {th("address", "Address", false)}
