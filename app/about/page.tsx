@@ -44,6 +44,10 @@ export default function About() {
             <dd style={{ marginBottom: 10 }}>ARGUS Enterprise certified; Bloomberg Market Concepts</dd>
             <dt>Investing</dt>
             <dd style={{ marginBottom: 10 }}>Analyst, Lehigh Investment Management Group (student-run portfolio)</dd>
+            <dt>Leadership</dt>
+            <dd style={{ marginBottom: 10 }}>Treasurer, Alpha Kappa Psi professional business fraternity (Lehigh)</dd>
+            <dt>Competitions</dt>
+            <dd style={{ marginBottom: 10 }}>Winner, Johnson &amp; Johnson Case Competition; winner, Eight Eleven Group (Brooksource) Strategy Challenge</dd>
             <dt>Built with</dt>
             <dd>Python (pyproj) data pipeline; Next.js and TypeScript; Leaflet maps; ExcelJS for the live-formula export; Google Gemini via a Cloudflare Worker; GitHub Actions and Pages</dd>
           </dl>

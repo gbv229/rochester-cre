@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "../components/Nav";
+import { DATA_CHECKED } from "../lib/config";
 
 export const metadata: Metadata = {
   title: { default: "RochesterCRE — Monroe County commercial real estate", template: "%s · RochesterCRE" },
@@ -27,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="https://www.linkedin.com/in/gagevanquekelberg" target="_blank" rel="noreferrer">LinkedIn</a>
               <a href="https://github.com/gbv229/rochester-cre" target="_blank" rel="noreferrer">GitHub</a>
             </nav>
-            Built by Gage Van Quekelberg. Property data: NYS Office of Real Property Tax Services, Monroe County 2024 and 2025
+            Built by Gage Van Quekelberg. Data sources last checked {DATA_CHECKED}. Property data: NYS Office of Real Property Tax Services, Monroe County 2024 and 2025
             final assessment rolls. Underwriting outputs are modeled estimates, not appraisals or offers. Aerial imagery © Esri,
             Maxar, Earthstar Geographics. Basemap © Esri, HERE, Garmin, OpenStreetMap contributors.
           </div>

@@ -1,6 +1,7 @@
 /**
  * Rochester economic indicators, from FRED (Federal Reserve Bank of St. Louis).
- * Pulled October 2026. Series IDs are listed so each can be checked or refreshed.
+ * Pulled October 2026; national series (US unemployment, 10-year Treasury) refreshed November 2026.
+ * Series IDs are listed so each can be checked or refreshed.
  */
 
 export type Point = { date: string; value: number };
@@ -18,7 +19,7 @@ export const SERIES = {
     id: "UNRATE", title: "Unemployment rate, United States", units: "%", note: "Seasonally adjusted",
     data: s(`2015-01-01|5.7 2015-07-01|5.2 2016-01-01|4.8 2016-07-01|4.8 2017-01-01|4.7 2017-07-01|4.3 2018-01-01|4.0 2018-07-01|3.8
       2019-01-01|4.0 2019-07-01|3.7 2020-01-01|3.6 2020-07-01|10.2 2021-01-01|6.4 2021-07-01|5.4 2022-01-01|4.0 2022-07-01|3.5
-      2023-01-01|3.5 2023-07-01|3.5 2024-01-01|3.7 2024-07-01|4.2 2025-01-01|4.0 2025-07-01|4.3 2026-01-01|4.3 2026-07-01|4.1 2026-08-01|4.2`),
+      2023-01-01|3.5 2023-07-01|3.5 2024-01-01|3.7 2024-07-01|4.2 2025-01-01|4.0 2025-07-01|4.3 2026-01-01|4.3 2026-07-01|4.1 2026-08-01|4.1 2026-09-01|4.2 2026-10-01|4.1`),
   },
   jobs: {
     id: "ROCH336NA", title: "Total nonfarm jobs, Rochester MSA", units: "thousands", note: "Seasonally adjusted",
@@ -41,12 +42,12 @@ export const SERIES = {
       2026-01-01|308.79 2026-04-01|320.30`),
   },
   treasury10: {
-    id: "GS10", title: "10-year Treasury yield", units: "%", note: "Monthly average, quarterly points",
+    id: "GS10", title: "10-year Treasury yield", units: "%", note: "Monthly average, quarterly points plus the latest months",
     data: s(`2019-01-01|2.71 2019-04-01|2.53 2019-07-01|2.06 2019-10-01|1.71 2020-01-01|1.76 2020-04-01|0.66 2020-07-01|0.62
       2020-10-01|0.79 2021-01-01|1.08 2021-04-01|1.64 2021-07-01|1.32 2021-10-01|1.58 2022-01-01|1.76 2022-04-01|2.75
       2022-07-01|2.90 2022-10-01|3.98 2023-01-01|3.53 2023-04-01|3.46 2023-07-01|3.90 2023-10-01|4.80 2024-01-01|4.06
       2024-04-01|4.54 2024-07-01|4.25 2024-10-01|4.10 2025-01-01|4.63 2025-04-01|4.28 2025-07-01|4.39 2025-10-01|4.06
-      2026-01-01|4.21 2026-04-01|4.32 2026-07-01|4.60 2026-09-01|4.99`),
+      2026-01-01|4.21 2026-04-01|4.32 2026-07-01|4.60 2026-09-01|4.99 2026-10-01|5.13`),
   },
   population: {
     id: "NYMONR5POP", title: "Resident population, Monroe County", units: "thousands", note: "Annual (Census estimates)",
@@ -66,3 +67,7 @@ export const fredUrl = (id: string) => `https://fred.stlouisfed.org/series/${id}
 export const last = (d: readonly Point[]) => d[d.length - 1];
 export const first = (d: readonly Point[]) => d[0];
 export const at = (d: readonly Point[], date: string) => d.find((p) => p.date === date);
+
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+/** "2026-10-01" -> "October 2026" */
+export const monthLabel = (date: string) => `${MONTHS[Number(date.slice(5, 7)) - 1]} ${date.slice(0, 4)}`;

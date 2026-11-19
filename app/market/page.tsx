@@ -3,7 +3,7 @@ import LineChart from "../../components/LineChart";
 import Bars from "../../components/Bars";
 import { properties, CATEGORY_COLOR, CATEGORIES, usdShort, pct, signedPct, median, ownerGroup } from "../../lib/data";
 import { MARKET, BY_CLASS, SOURCES, assumptionsFor } from "../../lib/assumptions";
-import { SERIES, fredUrl, last, at } from "../../lib/economy";
+import { SERIES, fredUrl, last, at, monthLabel } from "../../lib/economy";
 
 export const metadata = { title: "Rochester market analysis" };
 
@@ -137,7 +137,7 @@ export default function Market() {
       <section className="section">
         <h2>Regional economy</h2>
         <div className="figs" style={{ marginBottom: 20 }}>
-          <div className="fig"><div className="k">Unemployment, Rochester</div><div className="v">{pct(urNow)}</div><div className="s">US {pct(usNow)}, {last(E.unemployment.data).date.slice(0, 7)}</div></div>
+          <div className="fig"><div className="k">Unemployment, Rochester</div><div className="v">{pct(urNow)}</div><div className="s">{monthLabel(last(E.unemployment.data).date)}; US {pct(usNow)} in {monthLabel(last(E.usUnemployment.data).date)}</div></div>
           <div className="fig"><div className="k">Nonfarm jobs</div><div className="v">{jobsNow.toFixed(1)}K</div><div className="s">{signedPct((jobsNow / jobsPre - 1) * 100)} vs Jan 2020</div></div>
           <div className="fig"><div className="k">Manufacturing jobs</div><div className="v">{mfgNow.toFixed(1)}K</div><div className="s">{signedPct((mfgNow / mfg15 - 1) * 100)} since 2015</div></div>
           <div className="fig"><div className="k">House price index</div><div className="v">{signedPct((hpiNow / hpiYr - 1) * 100)}</div><div className="s">Year over year, Q2 2026</div></div>
@@ -164,7 +164,7 @@ export default function Market() {
       <section className="section split">
         <div>
           <h2>Capital markets</h2>
-          <p className="muted small">The model's going-in cap rates against the current 10-year Treasury ({pct(tsy, 2)}, September 2026). Commercial real estate has historically priced around 300–400 basis points over the 10-year; a spread well inside that range means pricing leans on growth or on lower future rates.</p>
+          <p className="muted small">The model's going-in cap rates against the current 10-year Treasury ({pct(tsy, 2)}, {monthLabel(last(E.treasury10.data).date)} average). Commercial real estate has historically priced around 300–400 basis points over the 10-year; a spread well inside that range means pricing leans on growth or on lower future rates.</p>
           <Chart title="10-year Treasury yield" id={E.treasury10.id} note="Monthly average; dashed line is the model's multifamily cap rate">
             <LineChart label="10-year Treasury yield with multifamily cap rate" format={(v) => `${v.toFixed(1)}%`} yMin={0}
               series={[{ name: "10-year", color: "var(--ink)", data: E.treasury10.data },
